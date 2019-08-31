@@ -17,11 +17,23 @@ class VoyagerDummyDatabaseSeeder extends Seeder
     public function run()
     {
         $this->seedersPath = database_path('seeds').'/';
-        $this->seed('CategoriesTableSeeder');
-        $this->seed('UsersTableSeeder');
-        $this->seed('PostsTableSeeder');
-        $this->seed('PagesTableSeeder');
-        $this->seed('TranslationsTableSeeder');
-        $this->seed('PermissionRoleTableSeeder');
+        $this->call('DataTypesTableSeeder');
+        $this->call('DataRowsTableSeeder');
+        $this->call('MenusTableSeeder');
+        $this->call('MenuItemsTableSeeder');
+        $this->call('RolesTableSeeder');
+        $this->call('PermissionsTableSeeder');
+        $this->call('PermissionRoleTableSeeder');
+        $this->call('SettingsTableSeeder');
+        $this->call('CategoriesTableSeeder');
+        $this->call('UsersTableSeeder');
+        $this->call('PostsTableSeeder');
+        $this->call('PagesTableSeeder');
+        $this->call('TranslationsTableSeeder');
+        $this->call('PermissionRoleTableSeeder');
+        $this->call(DestinationsTableSeeder::class);
+        $this->call(BusinessTypesTableSeeder::class);
+        $this->call('ImageTableSeeder');
+
     }
 }

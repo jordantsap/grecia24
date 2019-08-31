@@ -36,6 +36,9 @@
         "psr-4": {
             "App\\": "app/"
         },
+        "psr-0": {
+            "App\\Models": "app/Models"
+        },
         "classmap": [
             "database/seeds",
             "database/factories"
