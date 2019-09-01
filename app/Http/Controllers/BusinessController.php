@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Business;
+use App\Models\Business;
+use App\Models\BusinessType;
 use Illuminate\Http\Request;
 
 class BusinessController extends Controller
@@ -12,9 +13,11 @@ class BusinessController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(BusinessType $businesstype)
     {
-        //
+        $businesses = Business::where('business_type_id', $businesstype->id)->get();
+
+        return view('catalog.type', compact('businesses'));
     }
 
     /**
@@ -46,7 +49,8 @@ class BusinessController extends Controller
      */
     public function show(Business $business)
     {
-        //
+        $business = Business::findOrFail($business->id);
+        return view('catalog.business', compact('business'));
     }
 
     /**

@@ -7,11 +7,13 @@
   <div class="container art-sheet" style="padding-left:0px !important;padding-right:0px !important;">
     @include('partials.breadcrump')
     {{-- #all content here --}}
-    <div id="content" class="col-xs-9 border">
-      @yield('content')
-    </div>
-    <div id="right" class="col-xs-3 border">
-      @include('right')
+    <div class="col-xs-12">
+      <div id="content" class="col-xs-9">
+        @yield('content')
+      </div>
+      <div id="right" class="col-xs-3">
+        @include('right')
+      </div>
     </div>
 
   </div>

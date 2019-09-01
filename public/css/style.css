@@ -2,6 +2,9 @@
 .border{
   border:1px solid black;
 }
+.rawimages{
+  float:right !important;
+}
 .art-sheet {
     background: #FAFAFA;
     margin: 10px auto;

@@ -9,7 +9,8 @@ Route::get('destinations', 'DestinationController@index')->name('destinations.in
 Route::get('destinations/{destination}', 'DestinationController@show')->name('destinations.show');
 Route::view('/company', 'company')->name('postContact');
 Route::get('catalog', 'BusinessTypeController@index');
-Route::get('catalog/{businesstype}', 'BusinessTypeController@show');
+Route::get('catalog/{businesstype}', 'BusinessController@index');
+Route::get('business/{business}', 'BusinessController@show')->name('business.show');
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });

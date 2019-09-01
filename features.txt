@@ -1,7 +1,7 @@
-menus Company, Catalog, Tourist Destination, contact
+#menus Company, Catalog, Tourist Destination, contact
 
 models:
-destination
+#destination
 
 advert
 
@@ -37,7 +37,7 @@ businesstype
 
 Beach bar
 
- 
+
 
 propertytype
 country
@@ -66,18 +66,17 @@ Styles
 Format
 
 Path:
-Εναλλαγή editor
-Εικόνα χρήστη (avatar)  
+Εικόνα χρήστη (avatar)
 Πρόσθετες λεπτομέρειες
-URL  
-Επωνυμία	
-ΑΦΜ	
-Τηλέφωνο	
-Κινητό¨	
-Διεύθυνση	
-Πόλη	
-Κράτος ή επαρχία	
-Ταχυδρομικός κώδικας	
+URL
+Επωνυμία
+ΑΦΜ
+Τηλέφωνο
+Κινητό¨
+Διεύθυνση
+Πόλη
+Κράτος ή επαρχία
+Ταχυδρομικός κώδικας
 Credits
 Αγορά Πακέτου Αγγελιών
 Η αγορά είνι απαραίτητη για να μπορέσετε να καταχωρήσετε τα ακίνητα στο Grecia24.ru .1 credit αντιστοιχεί σε καταχώρηση 1 ακινήτου.

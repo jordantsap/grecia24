@@ -4,7 +4,7 @@
         <div class="row">
             {{-- <div class=""> --}}
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="col-xs-3 push-left">
+            <div class="col-xs-4">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -16,9 +16,9 @@
                 </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="col-xs-9">
+            <div class="col-xs-8">
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                  <div id="languages" class="col-xs-4 pull-right" style="left: 209.318px;">
+                  <div id="languages" class="col-xs-3" style="">
                       <div id="jflanguageselection">
                           <div class="rawimages">
                               <span><a href="https://grecia24.gr/index.php?lang=ru"><img src="{{asset('images/flags/ru.gif')}}" alt="Russian" title="Russian"></a></span>
@@ -30,7 +30,7 @@
                           </div>
                       </div>
                   </div>
-                    <div id="menu" class="col-xs-10" style="left: 209.318px;">
+                    <div id="menu" class="col-xs-12" style="">
                       <ul class="art-hmenu" style="margin-top:20px;">
                           <li id="current" class="active item1"><a href="https://grecia24.gr/" class=" active">Home</a></li>
                           <li class="item427"><a href="{{url('company')}}">Company</a></li>

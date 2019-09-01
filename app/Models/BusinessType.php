@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class BusinessType extends Model
 {
-  protected $fillable =[];
+  protected $fillable =['id',];
 
     public function getRouteKeyName()
     {
