@@ -1,7 +1,7 @@
 ////////////////////////////
     public function ContactPage()
     {
-        return view('information.contact');
+        return view('contact');
     }
     public function postContact(Request $request)
     {

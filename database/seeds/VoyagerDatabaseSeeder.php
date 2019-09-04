@@ -16,22 +16,22 @@ class VoyagerDatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->seed(BusinessTypesTableSeeder::class);
-        $this->seed('DestinationsTableSeeder');
-        $this->seed('ImageTableSeeder');
+      // $this->seed(BusinessTypesTableSeeder::class);
+      //   $this->seed('DestinationsTableSeeder');
+      //   $this->seed('ImageTableSeeder');
         $this->seed('DataTypesTableSeeder');
         $this->seed('DataRowsTableSeeder');
         $this->seed('MenusTableSeeder');
         $this->seed('MenuItemsTableSeeder');
-        $this->seed('RolesTableSeeder');
-        $this->seed('PermissionsTableSeeder');
-        $this->seed('PermissionRoleTableSeeder');
-        $this->seed('SettingsTableSeeder');
-        $this->seed('CategoriesTableSeeder');
-        $this->seed('UsersTableSeeder');
-        $this->seed('PostsTableSeeder');
-        $this->seed('PagesTableSeeder');
-        $this->seed('TranslationsTableSeeder');
-        $this->seed('PermissionRoleTableSeeder');
+        // $this->seed('RolesTableSeeder');
+        // $this->seed('PermissionsTableSeeder');
+        // $this->seed('PermissionRoleTableSeeder');
+        // $this->seed('SettingsTableSeeder');
+        // $this->seed('CategoriesTableSeeder');
+        // $this->seed('UsersTableSeeder');
+        // $this->seed('PostsTableSeeder');
+        // $this->seed('PagesTableSeeder');
+        // $this->seed('TranslationsTableSeeder');
+        // $this->seed('PermissionRoleTableSeeder');
     }
 }

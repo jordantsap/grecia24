@@ -14,18 +14,14 @@ class ContactController extends Controller
       public function postContact(Request $request)
       {
         $this->validate($request, [
-          'firstname' => 'required',
-          'lastname' => 'required',
-          'telephone' => 'required',
+          'name' => 'required',
           'email' => 'required|email',
-          // 'subject' => 'min:3',
+          'telephone' => 'required',
           'message' => 'min:10']);
         $data = array(
-          'firstname' => $request->firstname,
-          'lastname' => $request->lastname,
-          'telephone' => $request->telephone,
+          'name' => $request->firstname,
           'email' => $request->email,
-          'subject' => 'New Contact form',
+          'telephone' => $request->telephone,
           'bodyMessage' => $request->message
           );
         Mail::send('emails.contact', $data, function($message) use ($data){

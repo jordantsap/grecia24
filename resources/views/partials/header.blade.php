@@ -1,4 +1,4 @@
-<header class="art-header" style="margin-top:20px;">
+<header class="art-header" style="height:100px">
 
     <div class="container">
         <div class="row">
@@ -16,7 +16,7 @@
                 </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="col-xs-8">
+            <div class="col-xs-12 col-sm-8">
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <div id="languages" class="col-xs-3" style="">
                       <div id="jflanguageselection">

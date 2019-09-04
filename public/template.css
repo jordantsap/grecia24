@@ -358,7 +358,7 @@ li p, .art-postcontent li p, .art-blockcontent li p
     right: 0;
     top: 0;
     width: 1096px;
-    z-index: 0;  
+    z-index: 0;
 }
 
 .art-slider-inner
@@ -1304,7 +1304,7 @@ div.art-block img
 	  margin-top:20px;
 }
 
-#d_akin ul{ 
+#d_akin ul{
 	position:relative;
 }
 
@@ -1332,7 +1332,7 @@ div.art-block img
 	margin:0 auto;
 	display:block;
 	cursor:pointer;
-	
+
 }
 #button_top{
 	margin-top:-24px;
@@ -1358,7 +1358,7 @@ div.art-block img
 
 }
 
-#d_akin_hor table{ 
+#d_akin_hor table{
 position:relative;
  height:230px;
 }
@@ -1391,7 +1391,7 @@ position:relative;
 
 #button_left, #button_right{
 	cursor:pointer;
-	
+
 }
 #button_left{
 	float:left;
@@ -3427,7 +3427,7 @@ td.key
 
 #languages
 {
- float:right; 
+ float:right;
  margin: 10px 0;
 
 }

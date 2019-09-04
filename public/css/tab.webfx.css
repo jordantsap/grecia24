@@ -1,0 +1,93 @@
+.dynamic-tab-pane-control.tab-pane {
+	position:	relative;
+	width:		100%;
+}
+.dynamic-tab-pane-control .tab-row .tab {
+	font-family:	Verdana, Helvetica, Arial;
+	font-size:		16px;
+	display:		inline;
+	float:left;
+	
+	/*margin:			1px -5px 1px 5px;
+	padding:		3px 6px 3px 6px;
+	background:		rgb(234,242,255);
+	border:			1px solid;
+	border-color:	rgb(120,172,255);
+	border-left:	0;
+	border-bottom:	0;
+	border-top:		0; MAD*/
+	cursor:			Default;
+	cursor:			hand;
+	cursor:			pointer;
+	z-index:		1;
+	position:		relative;
+	top:			0;
+	background:	url("/components/com_sobi2/images/tab_bg.png");
+	margin-top:0px;
+	padding:5px;
+	
+	
+    /*margin-left:10px;
+	padding:3px 0px;*/
+	text-align:center;
+	width:130px;
+	
+}
+.dynamic-tab-pane-control .tab-row .tab.selected, .dynamic-tab-pane-control .tab-row .tab:hover {
+	/*border:		1px solid rgb(120,172,255); MAD*/
+	border-bottom:	0;
+	z-index:		3;
+	background:	url("/components/com_sobi2/images/active_tab_bg.png");
+	
+	/*padding:		2px 6px 5px 6px;
+	margin:			1px -6px -2px 0px;
+	top:			-2px; 
+	background:		red; MAD*/
+	
+}
+.dynamic-tab-pane-control .tab-row .tab:hover a{
+	color:#fff;
+}
+
+
+.dynamic-tab-pane-control .tab-row .tab a {
+	font-family:		Verdana, Helvetica, Arial;
+	font-size:			16px;
+	font-weight:		normal;
+	color:				#777;
+	text-decoration:	none;
+	cursor:				hand;
+	cursor:				pointer;
+	top:2px;
+}
+.dynamic-tab-pane-control .tab-row .hover a {
+	font-weight:	normal;
+	color:	fff;
+}
+.dynamic-tab-pane-control .tab-row .tab.selected a {
+	
+	color:	white;
+}
+.dynamic-tab-pane-control .tab-page {
+	clear:			both;
+	/*border:			1px solid rgb(120,172,255); MAD*/
+	background:		White;
+	z-index:		2;
+	position:		relative;
+	/*top:			-2px; MAD*/
+	color:			Black;
+	font-family:	Verdana, Helvetica, Arial;
+	font-size:		13px;
+	/*padding:		10px; MAD*/
+}
+.dynamic-tab-pane-control .tab-row {
+	z-index:		1;
+	white-space:	nowrap;
+	/*background:		rgb(234,242,255); MAD*/
+	height:			40px;
+	width:			100%;
+	background:	url("/components/com_sobi2/images/tabs_bg.png");
+}
+.calendar {
+	z-index: 10;
+}

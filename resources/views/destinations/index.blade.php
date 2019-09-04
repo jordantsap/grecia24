@@ -4,7 +4,7 @@ us, more info,')
 @section('content')
 
 
-<div class="row">
+<div class="col-xs-12">
   @if(count($destinations) > 0) @foreach ($destinations as $destination)
   <div class="col-xs-12 col-sm-4 col-md-4 portfolio-item">
     <div class="card h-100">
@@ -13,10 +13,8 @@ us, more info,')
           alt="{{ $destination->title }}">
       </a>
     </div>
-    <div class="text-center">
-      <br>
+    <div class="text-center" style="margin: 10px 0px 5px 0px;">
       <a href="{{ route('destinations.show',$destination->slug) }}">{{ str_limit($destination->title, 30) }}</a>
-
     </div>
   </div>
 

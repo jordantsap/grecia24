@@ -1,28 +1,28 @@
 @include('partials.head')
 
-<body style="background-image:url('{{asset('images/page.jpg')}}')">
+<body style="background-image:url('{{asset('images/page.jpg')}}'); background-size:cover;">
 
   @include('partials.header')
 
-  <div class="container art-sheet" style="padding-left:0px !important;padding-right:0px !important;">
+  <div class="art-sheet" style="padding-left:0px !important;padding-right:0px !important;">
     @include('partials.breadcrump')
     {{-- #all content here --}}
-    <div class="col-xs-12">
-      <div id="content" class="col-xs-9">
-        @yield('content')
-      </div>
+      <div class="row">
+        <div class="col-xs-12">
+        <div id="content" class="col-xs-9">
+          @yield('content')
+          @include('partials.outputgif')
+          @include('partials.exnethellasbanner')
+        </div>
       <div id="right" class="col-xs-3">
-        @include('right')
+        @include('partials.right')
       </div>
     </div>
-
-  </div>
-
-  <div style="margin-top:10px;background-color:#000000;opacity:0.9;">
-    <div class="container">
-      @include('partials.footer')
     </div>
+
   </div>
+
+  @include('partials.footer')
 </body>
 
 </html>

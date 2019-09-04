@@ -1,7 +1,0 @@
-# HTTrack Website Copier Cookie File
-# This file format is compatible with Netscape cookies
-grecia24.gr	TRUE	/	FALSE	1999999999	1e984c4e922b8775e04ddc961842cad8	jj0lf2o0ti3g45uu3bcvt1vcc0
-grecia24.gr	TRUE	/	FALSE	1999999999	lang	deleted
-grecia24.gr	TRUE	/	FALSE	1999999999	jfcookie	deleted
-grecia24.gr	TRUE	/	FALSE	1999999999	jfcookie[lang]	en
-

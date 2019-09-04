@@ -27,7 +27,7 @@ us, more info,')
 	          </tr>
 	        </tbody>
 	      </table>
-	      <table class="sobi2Listing">
+	      <table class="col-xs-12 sobi2Listing">
 					<tbody>
 							<tr>
 								@foreach ($businesses->chunk(2) as $chunk)
@@ -41,8 +41,8 @@ us, more info,')
 			              <a class="col-xs-6" href="{{route('business.show',$type->logo)}}">
 											<img class="sobi2Listing_img" src="{{asset($type->logo)}}"
 			                  alt="{{$type->title}}" title="{{$type->title}}" width="100%"></a>
-												<br>
-			              <div class="">
+
+			              {{-- <div class=""> --}}
 											<span class="sobi2Listing_field_street_en">Propileon 19,</span>
 											<br>
 				              <span class="sobi2Listing_field_city_en">Athens - Acropolis</span>
@@ -55,11 +55,11 @@ us, more info,')
 				              <span class="sobi2Listing_field_website">
 				                <a href="http://www.exnet.gr" title="Exnet Hellas" target="_blank">Website</a>
 				              </span>
-				              <div class="sobi2Listing_field_more">
+				              <span class="sobi2Listing_field_more">
 				                <a href="{{route('business.show', $type->slug)}}">read more...<img style="float:right;margin-right:10px;margin-top:5px;"
 				                   src="{{asset('images/arrow_right.gif')}}"></a>
-				              </div>
-			              </div>
+				              </span>
+			              {{-- </div> --}}
 			              <!-- here ends the template -->
 
 			              <!-- Don't remove these lines! -->
