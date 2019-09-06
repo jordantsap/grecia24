@@ -15,9 +15,9 @@ class BusinessController extends Controller
      */
     public function index(BusinessType $businesstype)
     {
-        $businesses = Business::where('business_type_id', $businesstype->id)->get();
-
-        return view('catalog.type', compact('businesses'));
+        // $businesses = Business::where('business_type_id', $businesstype->id)->get();
+        //
+        // return view('catalog.type', compact('businesses'));
     }
 
     /**

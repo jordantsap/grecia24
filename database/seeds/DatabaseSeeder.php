@@ -13,6 +13,32 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
       $this->call(BusinessTypesTableSeeder::class);
+      $this->call(DestinationsTableSeeder::class);
+      $this->call(BusinessTableSeeder::class);
+      $this->call(ImageTableSeeder::class);
+      $this->call(CountriesTableSeeder::class);
+      $this->call('MunicipalitiesTableSeeder');
+      $this->call('PrefecturesTableSeeder');
+      $this->call('PropertiesTableSeeder');
+      $this->call('PropertyAmmenitiesTableSeeder');
+      $this->call('PropertyBathroomsTableSeeder');
+      $this->call('PropertyBedroomsTableSeeder');
+      $this->call('PropertyCategoriesTableSeeder');
+      $this->call('PropertyCeilingsTableSeeder');
+      $this->call('PropertyFloorsTableSeeder');
+      $this->call('PropertyHeatTypesTableSeeder');
+      $this->call('PropertyInnerstairsTableSeeder');
+      $this->call('PropertyIntervalsTableSeeder');
+      $this->call('PropertyKindsTableSeeder');
+      $this->call('PropertyKitchensTableSeeder');
+      $this->call('PropertyLivingroomsTableSeeder');
+      $this->call('PropertyOrientationsTableSeeder');
+      $this->call('PropertyOutdoordescsTableSeeder');
+      $this->call('PropertyPoolsTableSeeder');
+      $this->call('PropertyRoofgardensTableSeeder');
+      $this->call('PropertyTypesTableSeeder');
+      $this->call('PropertyVerandasTableSeeder');
+      $this->call('PropertyViewsTableSeeder');
       $this->call('DataTypesTableSeeder');
       $this->call('DataRowsTableSeeder');
       $this->call('MenusTableSeeder');
@@ -27,8 +53,5 @@ class DatabaseSeeder extends Seeder
       $this->call('PagesTableSeeder');
       $this->call('TranslationsTableSeeder');
       $this->call('PermissionRoleTableSeeder');
-      $this->call(DestinationsTableSeeder::class);
-      $this->call(BusinessTableSeeder::class);
-      $this->call(ImageTableSeeder::class);
     }
 }

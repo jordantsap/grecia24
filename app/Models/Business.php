@@ -22,4 +22,11 @@ class Business extends Model
         return $this->belongsTo('App\Models\BusinessType');
     }
 
+    /**
+     * Get all of the images for the post.
+     */
+    public function images()
+    {
+        return $this->morphToMany('App\Models\Image', 'imageable');
+    }
 }

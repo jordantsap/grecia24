@@ -1,10 +1,10 @@
 @extends('layouts.master')
 @section('title', __('head.contactheadtitle'))
-@section('meta_description', __('meta.contactpagedescription'))
-@section('meta_keywords', 'contact form, contact us, more info,')
+@section('meta_description', __('meta.companypagedescription'))
+@section('meta_keywords', 'Grecia24 company, grecia24, e-portal,')
 
 @section('content')
-  <div class="col-xs-12">
+
     Grecia24 is e-Portal real estate, investment, Greek products, tourism, and culture.
 
   Is a top choice for citizens of Russia, Ukraine, Belarus and other countries of the Union of independent States RDI, wanting to have direct, quick and reliable informations on topics related to Greece.
@@ -15,5 +15,4 @@
 
   Grecia24 welcomes you to the magical place called Hellas!
 
-  </div>
 @endsection

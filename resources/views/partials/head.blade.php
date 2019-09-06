@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="{{asset('css/lightbox.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/com_sobi2.css')}}">
     <link rel="stylesheet" href="{{asset('css/adsmanager.css')}}">
+    <link rel="stylesheet" href="{{asset('css/tab.webfx.css')}}">
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
 
     {{-- js --}}

@@ -3,10 +3,14 @@ __('meta.contactpagedescription')) @section('meta_keywords', 'contact form, cont
 us, more info,')
 @section('content')
 
-
+<article class="row art-post">
+  <div class="art-postmetadataheader">
+    <h2 class="art-postheader">Τουριστικοί Προορισμοί</h2>
+  </div>
+</article>
 <div class="col-xs-12">
   @if(count($destinations) > 0) @foreach ($destinations as $destination)
-  <div class="col-xs-12 col-sm-4 col-md-4 portfolio-item">
+  <div class="col-xs-12 col-sm-4 col-md-4">
     <div class="card h-100">
       <a href="{{ route('destinations.show', $destination->slug) }}">
         <img class="img-responsive img-fluid rounded" style="width:100%;height:150px;" src="{{asset('images/destinations/'.$destination->image)}}"

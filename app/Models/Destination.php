@@ -15,10 +15,10 @@ class Destination extends Model
   ];
 
   /**
-     * Get the post's image.
-     */
-    public function image()
-    {
-        return $this->morphOne('App\Models\Image', 'imageable');
-    }
+   * Get all of the images for the post.
+   */
+  public function images()
+  {
+      return $this->morphToMany('App\Models\Image', 'imageable');
+  }
 }

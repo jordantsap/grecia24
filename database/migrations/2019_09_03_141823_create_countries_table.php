@@ -17,6 +17,7 @@ class CreateCountriesTable extends Migration
             $table->bigIncrements('id');
             $table->string('title');
             $table->string('slug');
+            $table->timestamps();
         });
     }
 

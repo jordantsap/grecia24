@@ -13,15 +13,15 @@ class CountriesTableSeeder extends Seeder
     {
       Country::create([
           'title'           => 'Greece',
-          'slug'          => Str::slug('greece'),
+          'slug'          => 'greece',
       ]);
       Country::create([
           'title'           => 'Cyprus',
-          'slug'          => Str::slug('cyprus'),
+          'slug'          => 'cyprus',
       ]);
       Country::create([
           'title'           => 'Bulgaria',
-          'slug'          => Str::slug('bulgaria'),
+          'slug'          => 'bulgaria',
       ]);
     }
 }

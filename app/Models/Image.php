@@ -6,11 +6,27 @@ use Illuminate\Database\Eloquent\Model;
 
 class Image extends Model
 {
+  protected $fillable =['url'];
   /**
-   * Get the owning imageable model.
-   */
-  public function imageable()
-  {
-      return $this->morphTo();
-  }
+     * Get all of the businesses that are assigned this tag.
+     */
+    public function businesses()
+    {
+        return $this->morphedByMany('App\Model\Business', 'imageable');
+    }
+
+    /**
+     * Get all of the properties that are assigned this tag.
+     */
+    public function properties()
+    {
+        return $this->morphedByMany('App\Models\Property', 'imageable');
+    }
+    /**
+     * Get all of the properties that are assigned this tag.
+     */
+    public function destinations()
+    {
+        return $this->morphedByMany('App\Models\Destination', 'imageable');
+    }
 }

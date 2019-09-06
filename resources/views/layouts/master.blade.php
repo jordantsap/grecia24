@@ -1,7 +1,5 @@
 @include('partials.head')
 
-<body style="background-image:url('{{asset('images/page.jpg')}}'); background-size:cover;">
-
   @include('partials.header')
 
   <div class="art-sheet" style="padding-left:0px !important;padding-right:0px !important;">

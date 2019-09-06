@@ -26,10 +26,10 @@ class BusinessTypeController extends Controller
      * @param  \App\BusinessType  $businessType
      * @return \Illuminate\Http\Response
      */
-    public function show(BusinessType $businessType)
+    public function show(BusinessType $businesstype)
     {
-        $businesses = Business::where('business_type_id', $businessType->id)->get();
-        return view('catalog.type', compact('businesses'));
+        $businesstype = BusinessType::with('businesses')->find($businesstype->id);
+        // dd($businessType);
+        return view('catalog.type', compact('businesstype'));
     }
-
 }

@@ -14,7 +14,7 @@ Route::get('destinations/{destination}', 'DestinationController@show')->name('de
 Route::view('/company', 'company')->name('postContact');
 
 Route::get('catalog', 'BusinessTypeController@index');
-Route::get('catalog/{businesstype}', 'BusinessController@index');
+Route::get('catalog/{businesstype}', 'BusinessTypeController@show');
 Route::get('business/{business}', 'BusinessController@show')->name('business.show');
 
 Route::group(['prefix' => 'admin'], function () {

@@ -30,33 +30,33 @@ us, more info,')
 	      <table class="col-xs-12 sobi2Listing">
 					<tbody>
 							<tr>
-								@foreach ($businesses->chunk(2) as $chunk)
+								@foreach ($businesstype->businesses->chunk(2) as $chunk)
 									<div class="col-xs-6">
-	            		@foreach ($chunk as $type)
+	            		@foreach ($chunk as $business)
 									<td style="border-style: solid; border-color: #ffffff">
 
 			              <p class="sobi2ItemTitle">
-			                <a href="" title="{{$type->title}}">{{$type->title}}</a>
+			                <a href="" title="{{$business->title}}">{{$business->title}}</a>
 			              </p>
-			              <a class="col-xs-6" href="{{route('business.show',$type->logo)}}">
-											<img class="sobi2Listing_img" src="{{asset($type->logo)}}"
-			                  alt="{{$type->title}}" title="{{$type->title}}" width="100%"></a>
+			              <a class="col-xs-6" href="{{route('business.show',$business->logo)}}">
+											<img class="sobi2Listing_img" src="{{asset($business->logo)}}"
+			                  alt="{{$business->title}}" title="{{$business->title}}" width="100%"></a>
 
 			              {{-- <div class=""> --}}
 											<span class="sobi2Listing_field_street_en">Propileon 19,</span>
 											<br>
 				              <span class="sobi2Listing_field_city_en">Athens - Acropolis</span>
 											<br>
-				              <span class="sobi2Listing_field_phone">{{$type->tel}}</span>
+				              <span class="sobi2Listing_field_phone">{{$business->tel}}</span>
 				              <br>
 				              <span class="sobi2Listing_field_email">
-				                <a href="mailto:{{$type->email}}">Email</a>
+				                <a href="mailto:{{$business->email}}">Email</a>
 				              </span>
 				              <span class="sobi2Listing_field_website">
 				                <a href="http://www.exnet.gr" title="Exnet Hellas" target="_blank">Website</a>
 				              </span>
 				              <span class="sobi2Listing_field_more">
-				                <a href="{{route('business.show', $type->slug)}}">read more...<img style="float:right;margin-right:10px;margin-top:5px;"
+				                <a href="{{route('business.show', $business->slug)}}">read more...<img style="float:right;margin-right:10px;margin-top:5px;"
 				                   src="{{asset('images/arrow_right.gif')}}"></a>
 				              </span>
 			              {{-- </div> --}}

@@ -137,16 +137,16 @@ a.sobi2_category_links_button_MAD{
 	margin-top:10px;
 	float:left;
 	width:92%;
-	
+
 	border: 1px solid #f5f5f5;
 	border-radius:20px;
 	-moz-border-radius:20px;
 	-webkit-border-radius:20px;
-	
+
 	background-color: #fff;
 	background-image: -moz-linear-gradient(#fff, #e8e8e8);
 	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#e8e8e8));
-	
+
 	box-shadow:3px 3px 5px #ccc;
 	-moz-box-shadow:3px 3px 5px #ccc;
 	-webkit-box-shadow:3px 3px 5px #ccc;
@@ -183,10 +183,10 @@ table.sobi2Listing td {
   border-width: 2px;
   margin-top: 0px;
   vertical-align: top;
-  
+
   /*MAD*/
   line-height: 20px;
-  
+
   border: 1px solid #f5f5f5 !important;
   border-radius:20px;
   -moz-border-radius:20px;
@@ -213,22 +213,22 @@ table.sobi2Listing input {
 /*.sobi2Listing img {
   border-style: none;
   padding-top: 5px;
-  padding-right: 5px; 
+  padding-right: 5px;
 }*/
 .sobi2Listing_img {
   border-style: none;
   padding-top: 5px;
   margin-right:10px;
-  
+
   /*MAD*/
-  padding-right: 3px; 
-  padding-bottom: 3px; 
-  float: left; 
-  
+  padding-right: 3px;
+  padding-bottom: 3px;
+  float: left;
+
   border-radius:3px;
   -moz-border-radius:3px;
   -webkit-border-radius:3px;
-  
+
   box-shadow:2px 2px 3px #ccc;
   -moz-box-shadow:2px 2px 3px #ccc;
   -webkit-box-shadow:2px 2px 3px #ccc;
@@ -237,7 +237,7 @@ table.sobi2Listing input {
 
 /* Style of Title (Name of Entry) */
 p.sobi2ItemTitle {
-  clear:left;    
+  clear:left;
   margin-left: 5px;
   margin-top:  5px !important; /*MAD*/
   padding-left: 5px;
@@ -273,16 +273,16 @@ span.sobi2Listing_field_more { /*MAD*/
 	text-align:center;
 	float:left;
 	width:50%;
-	
+
 	border: 1px solid #f5f5f5;
 	border-radius:15px;
 	-moz-border-radius:15px;
 	-webkit-border-radius:15px;
-	
+
 	background-color: #fff;
 	background-image: -moz-linear-gradient(#fff, #e9e9e9);
 	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#e9e9e9));
-	
+
 	box-shadow:2px 2px 2px #ccc;
 	-moz-box-shadow:2px 2px 2px #ccc;
 	-webkit-box-shadow:2px 2px 2px #ccc;
@@ -330,16 +330,16 @@ input.sobi2EditEntryButton {
 	font-size:12px;
 	color:#000;
 	text-align:center;
-	
+
 	border: 1px solid #eee;
 	border-radius:15px;
 	-moz-border-radius:15px;
 	-webkit-border-radius:15px;
-	
+
 	background-color: #fff;
 	background-image: -moz-linear-gradient(#fff, #e9e9e9);
 	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#e9e9e9));
-	
+
 	box-shadow:2px 2px 3px #ccc;
 	-moz-box-shadow:2px 2px 3px #ccc;
 	-webkit-box-shadow:2px 2px 3px #ccc;
@@ -358,7 +358,7 @@ table.sobi2Details {
 
   /*MAD*/
   background-color: #ffffff;
-  
+
   border: 1px solid #ebebeb !important;
   border-radius:30px;
   -moz-border-radius:30px;
@@ -373,7 +373,7 @@ table.sobi2Details {
 /* Style of Entry Name */
 table.sobi2Details h1 {
   padding-top: 5px;
-  
+
   /*MAD*/
   font-family:Tahoma,Arial,Helvetica,sans-serif;
   font-size:20px;
@@ -395,15 +395,15 @@ img.sobi2DetailsImage{
   float: right;
   /*padding-right: 5px;*/
   padding-top: 5px;
-  
+
   /*MAD*/
-  padding-right: 3px; 
-  padding-bottom: 3px; 
-  
+  padding-right: 3px;
+  padding-bottom: 3px;
+
   border-radius:3px;
   -moz-border-radius:3px;
   -webkit-border-radius:3px;
-  
+
   box-shadow:2px 2px 3px #ccc;
   -moz-box-shadow:2px 2px 3px #ccc;
   -webkit-box-shadow:2px 2px 3px #ccc;
@@ -430,7 +430,7 @@ span#sobi2Details_field_federal_state {
 }
 span#sobi2Details_field_city.#sobi2Details_field_city_en,#sobi2Details_field_city_ru {
   /*MAD*/
-  font-size:15px;  
+  font-size:15px;
 }
 
 span#sobi2Details_field_fax {
@@ -439,10 +439,10 @@ span#sobi2Details_field_fax {
   /*font-size: 12px;*/
   display: block;
   /*MAD*/
-  font-size:15px;  
+  font-size:15px;
   line-height: 44px;
   padding-left:50px;
-    background-image:url("/components/com_sobi2/images/fax.png");
+    background-image:url("../images/catalog/fax.png");
 	  background-repeat:no-repeat;
   background-position:left center;
 
@@ -454,10 +454,10 @@ span#sobi2Details_field_website {
   /*font-size: 12px;*/
   display: block;
   /*MAD*/
-  font-size:15px;  
+  font-size:15px;
   line-height: 44px;
   padding-left:50px;
-    background-image:url("/components/com_sobi2/images/url.png");
+    background-image:url("../images/catalog/url.png");
 	  background-repeat:no-repeat;
   background-position:left center;
 
@@ -468,10 +468,10 @@ span#sobi2Details_field_email {
   padding-top: 8px;
   /*font-size: 12px;*/
   display: block;
-  font-size:15px;  
+  font-size:15px;
   line-height: 44px;
   padding-left:50px;
-  background-image:url("/components/com_sobi2/images/email.png");
+  background-image:url("../images/catalog/email.png");
   background-repeat:no-repeat;
   background-position:left center;
 }
@@ -485,7 +485,7 @@ span#sobi2Details_field_street,#sobi2Details_field_street_en,#sobi2Details_field
   display:inline-block;
   line-height: 39px;
   padding-left:50px;
-  background-image:url("/components/com_sobi2/images/street.gif");
+  background-image:url("../images/catalog/street.gif");
   background-repeat:no-repeat;
   background-position:left center;
 }
@@ -494,7 +494,7 @@ span#sobi2Details_field_phone {
   line-height: 35px;
   padding-left:50px;
   font-size:15px;
-  background-image:url("/components/com_sobi2/images/phone.gif");
+  background-image:url("../images/catalog/phone.gif");
   background-repeat:no-repeat;
   background-position:left center;
   margin-bottom:4px;
@@ -520,7 +520,7 @@ span#sobi2Listing_field_website_label {
 }
 
 p.sobi2ExpMsg {
-  padding-left: 10px;  
+  padding-left: 10px;
 }
 
 /* Style for Way Search */
