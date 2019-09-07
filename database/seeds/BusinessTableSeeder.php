@@ -12,7 +12,6 @@ class BusinessTableSeeder extends Seeder
      */
     public function run()
     {
-
       DB::table('businesses')->truncate();
         $business = factory(Business::class, 40)->create();
 

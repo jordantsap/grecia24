@@ -6,6 +6,7 @@
     @include('partials.breadcrump')
     {{-- #all content here --}}
       <div class="row">
+        @include('partials.alerts')
         <div class="col-xs-12">
         <div id="content" class="col-xs-9">
           @yield('content')
@@ -21,6 +22,8 @@
   </div>
 
   @include('partials.footer')
+
+
 </body>
 
 </html>

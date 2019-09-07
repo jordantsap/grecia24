@@ -228,3 +228,43 @@
     </div>
   </div>
 </footer>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+
+<script src="{{ asset('js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('js/lightbox.min.js') }}"></script>
+
+@yield('extra-js')
+
+<script
+src="https://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+crossorigin="anonymous"></script>
+
+@yield('extra-js')
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+<script>
+@if(Session::has('message'))
+toastr.options.positionClass = 'toast-bottom-right';
+var type = "{{ Session::get('alert-type', 'info') }}";
+switch(type){
+    case 'info':
+        toastr.info("{{ Session::get('message') }}");
+        break;
+
+    case 'warning':
+        toastr.warning("{{ Session::get('message') }}");
+        break;
+
+    case 'success':
+        toastr.success("{{ Session::get('message') }}");
+        break;
+
+    case 'error':
+        toastr.error("{{ Session::get('message') }}");
+        break;
+}
+@endif
+</script>

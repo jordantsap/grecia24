@@ -1,4 +1,4 @@
-<body style="background-image:url('{{asset('images/page.jpg')}}'); background-size:cover;">
+<body style="background-image:url('{{asset('images/page.jpg')}}');background-size:cover;">
 
 <header class="art-header" style="height:100px">
 
@@ -39,10 +39,31 @@
                           <li class="item690"><a href="{{url('catalog')}}">Catalog</a></li>
                           <li class="item699"><a href="{{url('destinations')}}">Tourist Destination</a></li>
                           <li class="item308"><a href="{{url('contact')}}">Contact us</a></li>
+                          @if (Route::has('login'))
+                              @auth
+                                {{-- <li>
+                                  <a href="{{ url('/user') }}">Dashboard</a>
+                                </li> --}}
+
+                                <li><a class="nav-link text-success btn btn-outline-success" href="{{ route('logout') }}"
+                                  onclick="event.preventDefault();                                                 document.getElementById('logout-form').submit();">
+                                  Logout
+                                </a>
+
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: one;">
+                                  {{ csrf_field() }}
+                                </form>
+                              </li>
+
+                              @else
+                                
+                              @endauth
+                          @endif
                       </ul>
                     </div>
                 </div><!-- /.navbar-collapse -->
             </div>
+
 
         </div>
         <!--row end--->

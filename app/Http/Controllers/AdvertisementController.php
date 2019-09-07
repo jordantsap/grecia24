@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
 class AdvertisementController extends Controller
@@ -13,7 +14,7 @@ class AdvertisementController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        // $this->middleware('auth');
     }
     /**
      * Display a listing of the resource.
@@ -32,7 +33,12 @@ class AdvertisementController extends Controller
      */
     public function create()
     {
-        return view('adverts.create');
+      if (!(Auth::check())) {
+          return redirect('login')->with('warning', 'Sorry, members area only! Please login first');
+      }
+      return view('adverts.create');
+      // else {
+      // }
     }
 
     /**
