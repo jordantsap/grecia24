@@ -3,8 +3,11 @@
 @section('meta_description', __('meta.contactpagedescription'))
 @section('meta_keywords', 'contact form, contact us, more info,')
 
-@section('content')
+@section('breadcrumbs')
+    {{ Breadcrumbs::render('contact') }}
+@endsection
 
+@section('content')
 <div class="row">
   <div class="col-xs-5">
     <table style="text-align: left; width: 361px; height: 95px;" border="0">

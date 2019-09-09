@@ -1,5 +1,5 @@
 @if (session())
-<div class="" style="z-index:999999999;">
+<div class="">
   <div class="">
     <div class="col-xs-12 errors">
       @if (session()->has('status'))

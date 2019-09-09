@@ -1,6 +1,10 @@
-@extends('layouts.master') @section('title', __('head.contactheadtitle')) @section('meta_description',
-__('meta.contactpagedescription')) @section('meta_keywords', 'contact form, contact
-us, more info,')
+@extends('layouts.master')
+{{-- @section('title', __('head.contactheadtitle')) @section('meta_description', __('meta.contactpagedescription')) @section('meta_keywords', 'contact form, contact us, more info,') --}}
+
+{{-- @section('breadcrumbs')
+    {{ Breadcrumbs::render('destinations') }}
+@endsection --}}
+
 @section('content')
 
 <article class="row art-post">
@@ -8,8 +12,9 @@ us, more info,')
     <h2 class="art-postheader">Τουριστικοί Προορισμοί</h2>
   </div>
 </article>
-<div class="col-xs-12">
-  @if(count($destinations) > 0) @foreach ($destinations as $destination)
+<div class="row art-post">
+  @if(count($destinations) > 0)
+    @foreach ($destinations as $destination)
   <div class="col-xs-12 col-sm-4 col-md-4">
     <div class="card h-100">
       <a href="{{ route('destinations.show', $destination->slug) }}">
@@ -25,5 +30,4 @@ us, more info,')
   @endforeach
   @endif
 </div>
-<br>
 @endsection

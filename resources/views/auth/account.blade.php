@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+{{-- @section('breadcrumbs')
+    {{ Breadcrumbs::render('account') }}
+@endsection --}}
+
 @section('content')
 <div class="container">
     <div class="row justify-content-center">

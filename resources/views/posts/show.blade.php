@@ -1,5 +1,5 @@
 @extends('layouts.master') {{-- @section('title', $post->title. '. __('head.post')))
---}} @section('meta_description', ' '.$post->meta_description) @section('meta_keywords'
+--}} @section('meta_description', ' '.'$post->meta_description') @section('meta_keywords'
 .'$post->meta_keywords'.', '. '$post->category->name'.', '.__('head.postcategory'))
 @section('content')
 <div class="row border">
@@ -17,7 +17,7 @@
           <div class="item-page">
             <article class="art-post">
               <div class="art-postmetadataheader">
-                <h2 class="art-postheader"><a href="/index.php?option=com_content&amp;view=article&amp;id=563%3A2013-11-05-21-51-14&amp;catid=90%3Aeidiseis-nea&amp;Itemid=698&amp;lang=en"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Δημιουργούνται νέα μουσεία στην Ελλάδα στους πρόποδες του Ολύμπου και τα μοναστήρια των Μετεώρων</font></font></a></h2></div>
+                <h2 class="art-postheader"><a href=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Δημιουργούνται νέα μουσεία στην Ελλάδα στους πρόποδες του Ολύμπου και τα μοναστήρια των Μετεώρων</font></font></a></h2></div>
               <div class="art-postcontent clearfix">
                 <div class="art-article">
                   <p>

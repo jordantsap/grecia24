@@ -2,6 +2,10 @@
 __('meta.contactpagedescription')) @section('meta_keywords', 'contact form, contact
 us, more info,')
 
+{{-- @section('breadcrumbs')
+    {{ Breadcrumbs::render('real-estate') }}
+@endsection --}}
+
 @section('content')
 <div class="art-layout-wrapper">
   <div class="art-content-layout">

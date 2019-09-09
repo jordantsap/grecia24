@@ -1,7 +1,12 @@
 @extends('layouts.master') @section('title', __('head.contactheadtitle')) @section('meta_description',
 __('meta.contactpagedescription')) @section('meta_keywords', 'contact form, contact
-us, more info,') @section('content') {{-- @foreach ($iterable as $key => $value)
-@endforeach --}}
+us, more info,')
+
+{{-- @section('breadcrumbs')
+	{{ Breadcrumbs::render('catalog') }}
+@endsection --}}
+
+@section('content')
 <table id="sobi2CatListSymbols">
 		<tbody>
 			@foreach ($types->chunk(3) as $chunk)

@@ -1,6 +1,12 @@
 @extends('layouts.master') @section('title', __('head.contactheadtitle')) @section('meta_description',
 __('meta.contactpagedescription')) @section('meta_keywords', 'contact form, contact
-us, more info,') @section('content')
+us, more info,')
+
+@section('breadcrumbs')
+    {{ Breadcrumbs::render('posts') }}
+@endsection
+
+@section('content')
 
 <div class="blog">
   <article class="art-post">
@@ -18,7 +24,7 @@ us, more info,') @section('content')
                 <td valign="top" width="100%" class="article_column">
                   <article class="art-post">
                     <div class="art-postmetadataheader">
-                      <h2 class="art-postheader"><a href="{{route('posts.show', $post->id)}}"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Δημιουργούνται νέα μουσεία στην Ελλάδα στους πρόποδες του Ολύμπου και τα μοναστήρια των Μετεώρων</font></font></a></h2></div>
+                      <h2 class="art-postheader"><a href="{{route('posts.show', $post->slug)}}"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Δημιουργούνται νέα μουσεία στην Ελλάδα στους πρόποδες του Ολύμπου και τα μοναστήρια των Μετεώρων</font></font></a></h2></div>
                     <div class="art-postcontent clearfix">
                       <div class="art-article">
                         <p>

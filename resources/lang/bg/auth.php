@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Authentication Language Lines
@@ -13,8 +12,7 @@ return [
     |
     */
 
-    'failed' => 'These credentials do not match our records.',
-    'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
-    'memberarea' => 'Sorry, members area only! Please login first',
-
+    'failed'   => 'Неуспешно удостоверяване на потребител.',
+    'throttle' => 'Твърде много опити за вход. Моля, опитайте отново след :seconds секунди.',
+    'memberarea' => 'Зона строго за регистрирани членове, ако искате да продължите, моля, влезте първо',
 ];

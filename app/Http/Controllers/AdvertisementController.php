@@ -34,11 +34,9 @@ class AdvertisementController extends Controller
     public function create()
     {
       if (!(Auth::check())) {
-          return redirect('login')->with('warning', 'Sorry, members area only! Please login first');
+          return redirect('login')->with('warning' , __('auth.memberarea'));
       }
       return view('adverts.create');
-      // else {
-      // }
     }
 
     /**

@@ -1,4 +1,4 @@
-<body style="background-image:url('{{asset('images/page.jpg')}}');background-size:cover;">
+<body style="background-image:url('{{asset('images/page.jpg')}}');background-size:cover;background-attachment: fixed;">
 
 <header class="art-header" style="height:100px">
 
@@ -56,7 +56,7 @@
                               </li>
 
                               @else
-                                
+
                               @endauth
                           @endif
                       </ul>

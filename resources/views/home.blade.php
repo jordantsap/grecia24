@@ -3,11 +3,12 @@
   @include('partials.header')
 
   <div class="art-sheet">
+
     <div class="">
 
 
       <div id="content" class="col-xs-9">
-        {{-- @section('content') @endsection --}}
+        
         <div class="row art-layout-wrapper">
           <div class="art-content-layout">
             <div class="art-content-layout-row">

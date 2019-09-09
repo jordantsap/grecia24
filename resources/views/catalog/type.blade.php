@@ -5,8 +5,11 @@ __('meta.contactpagedescription'))
 @section('meta_keywords', 'contact form, contact
 us, more info,')
 
-@section('content')
+{{-- @section('breadcrumbs')
+	{{ Breadcrumbs::render('catalog') }}
+@endsection --}}
 
+@section('content')
 <section>
 	<article class="art-post">
 	  <div class="art-postmetadataheader">

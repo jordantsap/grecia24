@@ -3,8 +3,10 @@
 @section('meta_description', __('meta.companypagedescription'))
 @section('meta_keywords', 'Grecia24 company, grecia24, e-portal,')
 
+@section('breadcrumbs')
+  {{ Breadcrumbs::render('company') }}
+@endsection
 @section('content')
-
     Grecia24 is e-Portal real estate, investment, Greek products, tourism, and culture.
 
   Is a top choice for citizens of Russia, Ukraine, Belarus and other countries of the Union of independent States RDI, wanting to have direct, quick and reliable informations on topics related to Greece.
