@@ -36,4 +36,12 @@ class User extends \TCG\Voyager\Models\User
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * Get the phone record associated with the user.
+     */
+    public function profile()
+    {
+        return $this->hasOne('App\Models\Profile');
+    }
 }

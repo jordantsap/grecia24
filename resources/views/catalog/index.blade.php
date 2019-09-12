@@ -2,9 +2,9 @@
 __('meta.contactpagedescription')) @section('meta_keywords', 'contact form, contact
 us, more info,')
 
-{{-- @section('breadcrumbs')
+@section('breadcrumbs')
 	{{ Breadcrumbs::render('catalog') }}
-@endsection --}}
+@endsection
 
 @section('content')
 <table id="sobi2CatListSymbols">

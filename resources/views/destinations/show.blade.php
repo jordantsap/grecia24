@@ -3,6 +3,12 @@
 @section('meta_description', ' '.$destination->meta_description)
 @section('meta_keywords' .'$destination->meta_keywords'.', '. '$destination->category->name'.', '.__('head.postcategory'))
 
+
+  @section('breadcrumbs')
+      {{ Breadcrumbs::render('destinations.show', $destination) }}
+  @endsection
+
+
 @section('content')
   <div class="container">
     <div id="posts">

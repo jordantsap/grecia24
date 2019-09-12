@@ -3,7 +3,8 @@
 Route::get('/', 'HomeController@home');
 
 Auth::routes();
-Route::get('/user', 'HomeController@index')->name('dashboard');
+// Route::view('register', 'auth.login')->name('register'); //kalipsi apokrisi
+Route::get('/account', 'HomeController@index')->name('account');
 
 Route::view('/contact', 'contact');
 Route::post('/contact', 'ContactController@postContact')->name('postContact');
@@ -14,7 +15,7 @@ Route::get('destinations/{destination}', 'DestinationController@show')->name('de
 Route::view('/company', 'company')->name('postContact');
 
 Route::get('catalog', 'BusinessTypeController@index');
-Route::get('catalog/{businesstype}', 'BusinessTypeController@show');
+Route::get('catalog/{businesstype}', 'BusinessTypeController@show')->name('businesstype');
 Route::get('business/{business}', 'BusinessController@show')->name('business.show');
 
 Route::group(['prefix' => 'admin'], function () {
@@ -25,6 +26,8 @@ Route::group(['prefix' => 'admin'], function () {
 Route::resource('adverts', 'AdvertisementController');//->middleware('auth');
 
 Route::view('video', 'video');
+
+Route::view('drivers', 'drivers');
 
 Route::view('terms', 'terms');
 

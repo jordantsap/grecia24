@@ -3,7 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-
+use DB;
 class HomeViewServiceProvider extends ServiceProvider
 {
     /**
@@ -23,9 +23,12 @@ class HomeViewServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-      // view()->composer('home.advert', function($view) {
-      //   $view->with('adverts', Advert::where('active',1)->get());
-      //   $view->with('posts', DB::table('posts')->where('active',1)->orderBy('id','desc')->get());
-      // });
+      // serchform
+      view()->composer('home', function($view) {
+        $view->with('countries', \App\Models\Country::all());
+        $view->with('prefectures', \App\Models\Prefecture::all());
+        $view->with('municipalities', \App\Models\Municipality::all());
+        // $view->with('posts', DB::table('posts')->where('active',1)->orderBy('id','desc')->get());
+      });
     }
 }

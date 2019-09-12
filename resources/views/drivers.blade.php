@@ -4,9 +4,9 @@
 @section('meta_keywords', 'contact form, contact us, more info,')
 
 @section('breadcrumbs')
-    {{ Breadcrumbs::render('video') }}
+    {{ Breadcrumbs::render('drivers') }}
 @endsection
 
 @section('content')
-  <h1>Video Page</h1>
+  <h1>Drivers</h1>
 @endsection

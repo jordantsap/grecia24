@@ -4,10 +4,10 @@
 
   <div class="art-sheet" style="padding-left:0px !important;padding-right:0px !important;">
     {{-- @include('partials.breadcrumb') --}}
-    {{-- @yield('breadcrumbs') --}}
+    @yield('breadcrumbs')
     {{-- #all content here --}}
       <div class="row">
-        {{-- @include('partials.alerts') --}}
+        @include('partials.alerts')
         <div class="col-xs-12">
         <div id="content" class="col-xs-9">
           @yield('content')

@@ -5,9 +5,9 @@ __('meta.contactpagedescription'))
 @section('meta_keywords', 'contact form, contact
 us, more info,')
 
-{{-- @section('breadcrumbs')
-	{{ Breadcrumbs::render('catalog') }}
-@endsection --}}
+@section('breadcrumbs')
+	{{ Breadcrumbs::render('businesstype', $businesstype) }}
+@endsection
 
 @section('content')
 <section>
@@ -79,7 +79,8 @@ us, more info,')
 
 	      <div id="sobi2PageNav">
 	        <div class="art-pager">
-	          <span class="active">Start</span>
+						{{-- {{$businesstype->businesses->links}} --}}
+	          {{-- <span class="active">Start</span>
 	          <span class="active">Prev</span>
 	          <span class="active">1</span>
 	          <a title="2" href="/index.php?option=com_sobi2&amp;catid=2&amp;Itemid=692&amp;lang=en&amp;limitstart=6"
@@ -103,7 +104,7 @@ us, more info,')
 	          <a title="Next" href="/index.php?option=com_sobi2&amp;catid=2&amp;Itemid=692&amp;lang=en&amp;limitstart=6"
 	            class="">Next</a>
 	          <a title="End" href="/index.php?option=com_sobi2&amp;catid=2&amp;Itemid=692&amp;lang=en&amp;limitstart=84"
-	            class="">End</a>
+	            class="">End</a> --}}
 	        </div>
 	        <span id="one_time"></span>
 	      </div>

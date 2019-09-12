@@ -1,6 +1,5 @@
 <?php
-//
-// // /
+
 Breadcrumbs::for('home', function ($trail) {
     $trail->push('Home', url('/'));
 });
@@ -10,18 +9,26 @@ Breadcrumbs::for('company', function ($trail) {
     $trail->parent('home');
     $trail->push('Company', url('company'));
 });
-
 // // Home > Blog
 Breadcrumbs::for('destinations', function ($trail) {
     $trail->parent('home');
     $trail->push('Destinations', url('destinations'));
+});
+// Home > Blog > [Category]
+Breadcrumbs::for('destinations.show', function ($trail, $destination) {
+  $trail->parent('destinations');
+  $trail->push($destination->title, route('destinations.show', $destination->id));
 });
 // // // Home > Blog
 Breadcrumbs::for('catalog', function ($trail) {
     $trail->parent('home');
     $trail->push('Catalog', url('catalog'));
 });
-
+// Home > Blog > [Category]
+Breadcrumbs::for('businesstype', function ($trail, $businesstype) {
+  $trail->parent('catalog');
+  $trail->push($businesstype->title, route('businesstype', $businesstype->id));
+});
 // // Home > contact
 Breadcrumbs::for('contact', function ($trail) {
     $trail->parent('home');
@@ -35,16 +42,27 @@ Breadcrumbs::for('register', function ($trail) {
     $trail->parent('home');
     $trail->push('Register', url('register'));
 });
-// // Home > Blog > [Category]
-// Breadcrumbs::for('category', function ($trail, $category) {
-//     $trail->parent('blog');
-//     $trail->push($category->title, route('category', $category->id));
-// });
-//
-// // Home > Blog > [Category] > [Post]
-// Breadcrumbs::for('post', function ($trail, $post) {
-//     $trail->parent('category', $post->category);
-//     $trail->push($post->title, route('post', $post->id));
-// });
 
-?>
+Breadcrumbs::for('terms', function ($trail) {
+    $trail->parent('home');
+    $trail->push('Terms', url('terms'));
+});
+Breadcrumbs::for('video', function ($trail) {
+    $trail->parent('home');
+    $trail->push('Video', url('video'));
+});
+
+Breadcrumbs::for('drivers', function ($trail) {
+    $trail->parent('home');
+    $trail->push('Drivers', url('drivers'));
+});
+
+Breadcrumbs::for('posts', function ($trail) {
+    $trail->parent('home');
+    $trail->push('Posts', url('posts'));
+});
+// Home > Blog > [Category]
+// Breadcrumbs::for('posts.show', function ($trail, $post) {
+//   $trail->parent('posts');
+//   $trail->push($post->title,  url('posts.show', $post->id));
+// });

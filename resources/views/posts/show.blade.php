@@ -1,8 +1,13 @@
 @extends('layouts.master') {{-- @section('title', $post->title. '. __('head.post')))
 --}} @section('meta_description', ' '.'$post->meta_description') @section('meta_keywords'
 .'$post->meta_keywords'.', '. '$post->category->name'.', '.__('head.postcategory'))
+
+@section('breadcrumbs')
+    {{-- {{ Breadcrumbs::render('posts.show', $post) }} --}}
+@endsection
+
 @section('content')
-<div class="row border">
+<div class="row">
   <div class="aryt-layout-wrapper">
     <div class="art-content-layout">
       <div class="art-content-layout-row">

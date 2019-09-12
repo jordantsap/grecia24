@@ -30,7 +30,7 @@
                 </p>
                 <p>
                   <span style="font-size: 12pt;">
-                    <a href="#">
+                    <a href="{{url('drivers')}}">
                       <span style="font-size: 12pt;">
                         <span>
                           <span>Drivers Added Properties</span>
