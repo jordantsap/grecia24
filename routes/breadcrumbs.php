@@ -29,6 +29,10 @@ Breadcrumbs::for('businesstype', function ($trail, $businesstype) {
   $trail->parent('catalog');
   $trail->push($businesstype->title, route('businesstype', $businesstype->id));
 });
+Breadcrumbs::for('business', function ($trail, $business) {
+  $trail->parent('catalog');
+  $trail->push($business->title, route('business.show', $business->id));
+});
 // // Home > contact
 Breadcrumbs::for('contact', function ($trail) {
     $trail->parent('home');

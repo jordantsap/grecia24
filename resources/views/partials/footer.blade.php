@@ -87,7 +87,8 @@
                         </span>
                       </td>
                       <td>
-                        <a href="/index.php?option=com_paidsystem&amp;view=form&amp;Itemid=713&amp;lang=el"><img src="{{asset('images/social/paypal_icon.png')}}" alt="paypal icon"
+                        <a href="">
+                          <img src="{{asset('images/social/paypal_icon.png')}}" alt="paypal icon"
                             width="91" height="25"></a>
                       </td>
                     </tr>
@@ -100,7 +101,7 @@
                         <span>
                           <span>login first and then click </span>
                         </span>
-                        <a href="/index.php?option=com_paidsystem&amp;view=form&amp;Itemid=713&amp;lang=el">
+                        <a href="">
                           <span>
                             <span>here</span>
                           </span>

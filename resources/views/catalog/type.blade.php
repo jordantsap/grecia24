@@ -13,7 +13,7 @@ us, more info,')
 <section>
 	<article class="art-post">
 	  <div class="art-postmetadataheader">
-	    <h2 class="art-postheader"><span class="componentheading">Online Business Catalog</span></h2>
+	    <h2 class="art-postheader"><span class="componentheading">{{$businesstype->title}}</span></h2>
 	  </div>
 	  <div class="art-postcontent clearfix">
 	    <!-- Start of Sigsiu Online Business Index 2 component -->
@@ -24,8 +24,7 @@ us, more info,')
 	        <tbody>
 	          <tr>
 	            <td>
-	              <img src="{{asset('images/catalog/ktimatomesites.png')}}" style="float:left;" alt=""
-	                title="Real Estate Agents">
+								<img src="{{asset('images/'.$businesstype->icon)}}" alt="{{$businesstype->title}}" class="sobi2CatIco" style="float:left; border-style:none;">
 	            </td>
 	          </tr>
 	        </tbody>
@@ -39,7 +38,7 @@ us, more info,')
 									<td style="border-style: solid; border-color: #ffffff">
 
 			              <p class="sobi2ItemTitle">
-			                <a href="" title="{{$business->title}}">{{$business->title}}</a>
+			                <a href="{{route('business.show', $business->slug)}}" title="{{$business->title}}">{{$business->title}}</a>
 			              </p>
 			              <a class="col-xs-6" href="{{route('business.show',$business->logo)}}">
 											<img class="sobi2Listing_img" src="{{asset($business->logo)}}"
@@ -56,7 +55,7 @@ us, more info,')
 				                <a href="mailto:{{$business->email}}">Email</a>
 				              </span>
 				              <span class="sobi2Listing_field_website">
-				                <a href="http://www.exnet.gr" title="Exnet Hellas" target="_blank">Website</a>
+				                <a href="{{$business->url ? $business->url : '#'}}" title="{{$business->url ? $business->title : 'Notitle'}}" target="{{$business->url ? '_blank' : ''}}">Website</a>
 				              </span>
 				              <span class="sobi2Listing_field_more">
 				                <a href="{{route('business.show', $business->slug)}}">read more...<img style="float:right;margin-right:10px;margin-top:5px;"
@@ -79,7 +78,7 @@ us, more info,')
 
 	      <div id="sobi2PageNav">
 	        <div class="art-pager">
-						{{-- {{$businesstype->businesses->links}} --}}
+						{{-- {{$businesstype->links}} --}}
 	          {{-- <span class="active">Start</span>
 	          <span class="active">Prev</span>
 	          <span class="active">1</span>
@@ -113,8 +112,8 @@ us, more info,')
 	          <tr>
 	            <td id="sobi2Footer"></td>
 	            <td id="sobi2rss">
-	              <a href="https://grecia24.gr/index.php?option=com_sobi2&amp;sobi2Task=rss&amp;no_html=1&amp;catid=2&amp;Itemid=692&amp;lang=en"
-	                title="RSS Feeds"><img src="https://grecia24.gr/components/com_sobi2/images/feed.gif"
+	              <a href="#"
+	                title="RSS Feeds"><img src="{{asset('images/catalog/feed.gif')}}"
 	                  alt="RSS Feeds"></a>
 	            </td>
 	          </tr>

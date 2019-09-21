@@ -26,8 +26,8 @@ class HomeViewServiceProvider extends ServiceProvider
       // serchform
       view()->composer('home', function($view) {
         $view->with('countries', \App\Models\Country::all());
-        $view->with('prefectures', \App\Models\Prefecture::all());
-        $view->with('municipalities', \App\Models\Municipality::all());
+        $view->with('prefectures', \App\Models\State::all());
+        $view->with('municipalities', \App\Models\City::all());
         // $view->with('posts', DB::table('posts')->where('active',1)->orderBy('id','desc')->get());
       });
     }

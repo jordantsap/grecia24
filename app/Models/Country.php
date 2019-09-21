@@ -12,4 +12,19 @@ class Country extends Model
    * @var array
    */
   protected $fillable = ['title', 'slug','updated_at', 'created_at'];
+
+  /**
+     * Get the comments for the blog post.
+     */
+    public function states()
+    {
+        return $this->hasMany('App\Models\State');
+    }
+    /**
+     * Get the comments for the blog post.
+     */
+    public function cities()
+    {
+        return $this->hasMany('App\Models\City');
+    }
 }

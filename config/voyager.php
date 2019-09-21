@@ -14,7 +14,7 @@ return [
         'add_default_role_on_register' => true,
         'default_role'                 => 'user',
         'namespace'                    => null,
-        'default_avatar'               => public_path('images/users/default.png'),
+        'default_avatar'               => public_path('users/default.png'),
         'redirect'                     => '/admin',
     ],
 
@@ -71,7 +71,7 @@ return [
     |
     */
 
-    'hidden_files' => false,
+    'hidden_files' => true,
 
     /*
     |--------------------------------------------------------------------------

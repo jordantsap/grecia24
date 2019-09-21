@@ -49,7 +49,7 @@ class BusinessController extends Controller
      */
     public function show(Business $business)
     {
-        $business = Business::findOrFail($business->id);
+        $business = Business::with(['businesstype','images'])->findOrFail($business->id);
         return view('catalog.business', compact('business'));
     }
 

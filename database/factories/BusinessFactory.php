@@ -10,13 +10,14 @@ $factory->define(Business::class, function (Faker $faker) {
     'title' => $faker->firstName(),
     'slug' => $faker->lastName,
     'logo' => $faker->imageUrl(),
+    'image' => $faker->imageUrl(),
      // '13b73edae8443990be1aa8f1a483bc27.jpg' it's a filename without path
     'address' => $faker->phoneNumber,
     'tel' => '43245245525252',
-    'fax' => $faker->word,
+    'fax' => $faker->phoneNumber,
     'url' => '',
     "email" => $faker->safeEmail,
-    'description' => 'description',
+    'description' => $faker->sentence($nbWords = 50, $variableNbWords = true),
     'map' => '45654',
   ];
 });
