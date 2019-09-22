@@ -8,14 +8,6 @@
 	display:		inline;
 	float:left;
 
-	/*margin:			1px -5px 1px 5px;
-	padding:		3px 6px 3px 6px;
-	background:		rgb(234,242,255);
-	border:			1px solid;
-	border-color:	rgb(120,172,255);
-	border-left:	0;
-	border-bottom:	0;
-	border-top:		0; MAD*/
 	cursor:			Default;
 	cursor:			hand;
 	cursor:			pointer;
@@ -26,30 +18,18 @@
 	margin-top:0px;
 	padding:5px;
 
-
-    /*margin-left:10px;
-	padding:3px 0px;*/
 	text-align:center;
 	width:130px;
-
 }
 .dynamic-tab-pane-control .tab-row .tab.selected, .dynamic-tab-pane-control .tab-row .tab:hover {
-	/*border:		1px solid rgb(120,172,255); MAD*/
 	border-bottom:	0;
 	z-index:		3;
 	background:	url("../images/catalog//active_tab_bg.png");
-
-	/*padding:		2px 6px 5px 6px;
-	margin:			1px -6px -2px 0px;
-	top:			-2px;
-	background:		red; MAD*/
 
 }
 .dynamic-tab-pane-control .tab-row .tab:hover a{
 	color:#fff;
 }
-
-
 .dynamic-tab-pane-control .tab-row .tab a {
 	font-family:		Verdana, Helvetica, Arial;
 	font-size:			16px;

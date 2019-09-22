@@ -47,6 +47,15 @@ Breadcrumbs::for('register', function ($trail) {
     $trail->push('Register', url('register'));
 });
 
+Breadcrumbs::for('reset', function ($trail) {
+    $trail->parent('home');
+    $trail->push('Reet', url('reset'));
+});
+
+Breadcrumbs::for('email', function ($trail) {
+    $trail->parent('home');
+    $trail->push('Email', url('email'));
+});
 Breadcrumbs::for('terms', function ($trail) {
     $trail->parent('home');
     $trail->push('Terms', url('terms'));

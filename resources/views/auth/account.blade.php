@@ -18,7 +18,8 @@
                         </div>
                     @endif
 
-                    You are logged in! <a class="nav-link text-success btn btn-outline-success" href="{{ route('logout') }}"
+                    You are logged in!
+                    <a class="nav-link text-success btn btn-outline-success" href="{{ route('logout') }}"
                       onclick="event.preventDefault();                                                 document.getElementById('logout-form').submit();">
                       Logout
                     </a>

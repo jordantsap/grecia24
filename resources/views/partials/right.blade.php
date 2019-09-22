@@ -32,8 +32,9 @@
 
         </style>
 
-        <form action="/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=93&amp;Itemid=699&amp;lang=en"
-          method="post" name="login" id="form-login">
+        <form action="{{route('login')}}"
+          method="POST" name="login" id="form-login">
+          @csrf
           <fieldset class="input">
             <p id="form-login-username">
               <label for="modlgn_username">Username</label>
@@ -56,15 +57,15 @@
           </fieldset>
           <ul>
             <li>
-              <a href="/index.php?option=com_user&amp;view=reset&amp;lang=en">
+              <a href="{{route('password.request')}}">
                 Forgot your password?</a>
             </li>
-            <li>
+            {{-- <li>
               <a href="/index.php?option=com_user&amp;view=remind&amp;lang=en">
                 Forgot your username?</a>
-            </li>
+            </li> --}}
             <li>
-              <a href="/index.php?option=com_user&amp;view=register&amp;lang=en">
+              <a href="{{route('register')}}">
                 Create an account</a>
             </li>
           </ul>
@@ -85,6 +86,17 @@
           <li>
             <a href="{{route('account')}}">
               Go to Account page</a>
+            </li>
+            or
+            <li>
+                <a class="nav-link text-success btn btn-outline-success" href="{{ route('logout') }}"
+                  onclick="event.preventDefault();                                                 document.getElementById('logout-form').submit();">
+                  Logout
+                </a>
+
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: one;">
+                  {{ csrf_field() }}
+                </form>
             </li>
         </ul>
       </div>

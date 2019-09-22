@@ -28,6 +28,10 @@ class HomeController extends Controller
 
     public function home()
     {
+        // $countries = \App\Models\Country::all();
+        // $prefectures = \App\Models\State::all();
+        // $municipalities = \App\Models\City::all();
+        // return view('home', compact('countries','prefectures','municipalities'));
         return view('home');
     }
 }

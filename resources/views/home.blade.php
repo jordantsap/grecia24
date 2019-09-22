@@ -8,7 +8,7 @@
 
 
       <div id="content" class="col-xs-9">
-        
+
         <div class="row art-layout-wrapper">
           <div class="art-content-layout">
             <div class="art-content-layout-row">
@@ -1931,9 +1931,9 @@
                   <!-- end nostyle content -->
                 </div>
                 <!-- end nostyle -->
-                <article class="art-post art-messages" style="display: none;">
+                {{-- <article class="art-post art-messages" style="">
                   <div class="art-postcontent clearfix"></div>
-                </article>
+                </article> --}}
                 <article class="art-post">
                   <div class="art-postcontent clearfix">
                     <style>
@@ -2006,7 +2006,7 @@
                                 class="adsmanager_category_links_button enoik_class"
                                 style="display: none;">
 
-                                <img class="imgcat_ads" src="http://grecia24.ru//images/com_adsmanager/categories/7cat.jpg"
+                                <img class="imgcat_ads" src="{{asset('images/catalog/categories/1cat.jpg')}}"
                                   alt="Appartments">Appartments
                                 </a>
                             </td>
@@ -2016,7 +2016,7 @@
                                 class="adsmanager_category_links_button enoik_class"
                                 style="display: none;">
 
-                                <img class="imgcat_ads" src="http://grecia24.ru//images/com_adsmanager/categories/13cat.jpg"
+                                <img class="imgcat_ads" src="{{asset('images/catalog/categories/2cat.jpg')}}"
                                   alt="Houses">Houses
                                 </a>
                             </td>
@@ -2026,7 +2026,7 @@
                                 class="adsmanager_category_links_button enoik_class"
                                 style="display: none;">
 
-                                <img class="imgcat_ads" src="http://grecia24.ru//images/com_adsmanager/categories/14cat.jpg"
+                                <img class="imgcat_ads" src="{{asset('images/catalog/categories/3cat.jpg')}}"
                                   alt="Holiday homes">Holiday
                                 homes</a>
                             </td>
@@ -2038,7 +2038,7 @@
                                 class="adsmanager_category_links_button enoik_class"
                                 style="display: none;">
 
-                                <img class="imgcat_ads" src="http://grecia24.ru//images/com_adsmanager/categories/15cat.jpg"
+                                <img class="imgcat_ads" src="{{asset('images/catalog/categories/4cat.jpg')}}"
                                   alt="Hotels">Hotels
                                 </a>
                             </td>
@@ -2048,7 +2048,7 @@
                                 class="adsmanager_category_links_button enoik_class"
                                 style="display: none;">
 
-                                <img class="imgcat_ads" src="http://grecia24.ru//images/com_adsmanager/categories/16cat.jpg"
+                                <img class="imgcat_ads" src="{{asset('images/catalog/categories/5cat.jpg')}}"
                                   alt="Businesses">Businesses
                                 </a>
                             </td>
@@ -2058,7 +2058,7 @@
                                 class="adsmanager_category_links_button enoik_class"
                                 style="display: none;">
 
-                                <img class="imgcat_ads" src="http://grecia24.ru//images/com_adsmanager/categories/17cat.jpg"
+                                <img class="imgcat_ads" src="{{asset('images/catalog/categories/6cat.jpg')}}"
                                   alt="Business area">Business
                                 area</a>
                             </td>
@@ -2070,7 +2070,7 @@
                                 class="adsmanager_category_links_button enoik_class"
                                 style="display: none;">
 
-                                <img class="imgcat_ads" src="http://grecia24.ru//images/com_adsmanager/categories/18cat.jpg"
+                                <img class="imgcat_ads" src="{{asset('images/catalog/categories/7cat.jpg')}}"
                                   alt="Parcels">Parcels
                                 </a>
                             </td>
@@ -2080,7 +2080,7 @@
                                 class="adsmanager_category_links_button enoik_class"
                                 style="display: none;">
 
-                                <img class="imgcat_ads" src="http://grecia24.ru//images/com_adsmanager/categories/19cat.jpg"
+                                <img class="imgcat_ads" src="{{asset('images/catalog/categories/8cat.jpg')}}"
                                   alt="Plots">Plots
                                 </a>
                             </td>
@@ -2090,7 +2090,7 @@
                                 class="adsmanager_category_links_button enoik_class"
                                 style="display: none;">
 
-                                <img class="imgcat_ads" src="http://grecia24.ru//images/com_adsmanager/categories/20cat.jpg"
+                                <img class="imgcat_ads" src="{{asset('images/catalog/categories/9cat.jpg')}}"
                                   alt="Islands">Islands
                               </a>
 
@@ -2105,7 +2105,7 @@
                               <a href="/index.php?option=com_adsmanager&amp;view=list&amp;catid=1&amp;Itemid=691&amp;lang=en"
                                 class="adsmanager_category_links_button pol_class">
 
-                                <img class="imgcat_ads" src="http://grecia24.ru//images/com_adsmanager/categories/1cat.jpg"
+                                <img class="imgcat_ads" src="{{asset('images/catalog/categories/1cat.jpg')}}"
                                   alt="Appartments">Appartments
                                 </a>
                             </td>
@@ -2114,7 +2114,7 @@
                               <a href="/index.php?option=com_adsmanager&amp;view=list&amp;catid=9&amp;Itemid=691&amp;lang=en"
                                 class="adsmanager_category_links_button pol_class">
 
-                                <img class="imgcat_ads" src="http://grecia24.ru//images/com_adsmanager/categories/9cat.jpg"
+                                <img class="imgcat_ads" src="{{asset('images/catalog/categories/2cat.jpg')}}"
                                   alt="Houses">Houses
                                 </a>
                             </td>
@@ -2123,7 +2123,7 @@
                               <a href="/index.php?option=com_adsmanager&amp;view=list&amp;catid=10&amp;Itemid=691&amp;lang=en"
                                 class="adsmanager_category_links_button pol_class">
 
-                                <img class="imgcat_ads" src="http://grecia24.ru//images/com_adsmanager/categories/10cat.jpg"
+                                <img class="imgcat_ads" src="{{asset('images/catalog/categories/3cat.jpg')}}"
                                   alt="Holiday homes">Holiday
                                 homes</a>
                             </td>
@@ -2134,7 +2134,7 @@
                               <a href="/index.php?option=com_adsmanager&amp;view=list&amp;catid=5&amp;Itemid=691&amp;lang=en"
                                 class="adsmanager_category_links_button pol_class">
 
-                                <img class="imgcat_ads" src="http://grecia24.ru//images/com_adsmanager/categories/5cat.jpg"
+                                <img class="imgcat_ads" src="{{asset('images/catalog/categories/4cat.jpg')}}"
                                   alt="Hotels">Hotels
                                 </a>
                             </td>
@@ -2143,7 +2143,7 @@
                               <a href="/index.php?option=com_adsmanager&amp;view=list&amp;catid=8&amp;Itemid=691&amp;lang=en"
                                 class="adsmanager_category_links_button pol_class">
 
-                                <img class="imgcat_ads" src="http://grecia24.ru//images/com_adsmanager/categories/8cat.jpg"
+                                <img class="imgcat_ads" src="{{asset('images/catalog/categories/5cat.jpg')}}"
                                   alt="Businesses">Businesses
                                 </a>
                             </td>
@@ -2152,7 +2152,7 @@
                               <a href="/index.php?option=com_adsmanager&amp;view=list&amp;catid=3&amp;Itemid=691&amp;lang=en"
                                 class="adsmanager_category_links_button pol_class">
 
-                                <img class="imgcat_ads" src="http://grecia24.ru//images/com_adsmanager/categories/3cat.jpg"
+                                <img class="imgcat_ads" src="{{asset('images/catalog/categories/6cat.jpg')}}"
                                   alt="Business area">Business
                                 area</a>
                             </td>
@@ -2163,7 +2163,7 @@
                               <a href="/index.php?option=com_adsmanager&amp;view=list&amp;catid=2&amp;Itemid=691&amp;lang=en"
                                 class="adsmanager_category_links_button pol_class">
 
-                                <img class="imgcat_ads" src="http://grecia24.ru//images/com_adsmanager/categories/2cat.jpg"
+                                <img class="imgcat_ads" src="{{asset('images/catalog/categories/7cat.jpg')}}"
                                   alt="Parcels">Parcels
                                 </a>
                             </td>
@@ -2172,7 +2172,7 @@
                               <a href="/index.php?option=com_adsmanager&amp;view=list&amp;catid=11&amp;Itemid=691&amp;lang=en"
                                 class="adsmanager_category_links_button pol_class">
 
-                                <img class="imgcat_ads" src="http://grecia24.ru//images/com_adsmanager/categories/11cat.jpg"
+                                <img class="imgcat_ads" src="{{asset('images/catalog/categories/8cat.jpg')}}"
                                   alt="Plots">Plots
                                 </a>
                             </td>
@@ -2181,7 +2181,7 @@
                               <a href="/index.php?option=com_adsmanager&amp;view=list&amp;catid=12&amp;Itemid=691&amp;lang=en"
                                 class="adsmanager_category_links_button pol_class">
 
-                                <img class="imgcat_ads" src="http://grecia24.ru//images/com_adsmanager/categories/12cat.jpg"
+                                <img class="imgcat_ads" src="{{asset('images/catalog/categories/9cat.jpg')}}"
                                   alt="Islands">Islands
                               </a>
 

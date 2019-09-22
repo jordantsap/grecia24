@@ -1,0 +1,1414 @@
+/*                                */
+
+/* Stylesheet for com_adsmanager  */
+
+/*                                */
+
+/*    (c) 2006 Thomas PAPIN       */
+
+/*         GPL License            */
+
+/*                                */
+
+/*     thomas.papin@free.fr       */
+
+/*                                */
+
+
+
+#adsmanager_fieldset form br {
+
+	clear: left;
+
+}
+
+
+
+.adsmanager_main_cat,.adsmanager_main_cat a:link,.adsmanager_main_cat a:visited{
+
+ font-size: 16px;
+
+ margin: 0px;
+
+ margin-top: 10px;
+
+ padding: 0px ;
+
+ color: #000000;
+
+}
+
+
+
+.adsmanager_sub_cat,.adsmanager_sub_cat a:link,.adsmanager_sub_cat a:visited {
+
+ font-size: 11px;
+
+ font-family: arial;
+
+ margin-top: 2px;
+
+ padding: 0 ;
+
+ color: #7333B3;
+
+ font-weight:normal;
+
+ text-decoration:none;
+
+}
+
+
+
+.imgcat {
+
+ border : 0;
+
+}
+
+
+
+.adsmanager_footer {
+
+ font-size: 10px;
+
+ color: #555555;
+
+}
+
+
+
+.adsmanager_cat {
+
+ font-size: 10px;
+
+ color: #555555;
+
+}
+
+
+
+.adsmanager_pathway {
+
+ margin-bottom:10px;
+
+}
+
+
+
+table.adsmanager_table{ 
+
+ background-color: #F7F7F7;
+
+ border: 1px solid #cccccc;
+
+ border-collapse: collapse; 
+
+ width: 98%;
+
+}
+
+
+
+table.adsmanager_table th {
+
+ background-color: #EEEEEE;
+
+ border: 1px solid #cccccc;
+
+ text-align:center;
+
+ font-size: 11px;
+
+}
+
+
+
+table.adsmanager_table td {
+
+ border: 1px solid #cccccc;
+
+}
+
+
+
+.adsmanager_table td img.adimage {
+
+	float: left;
+
+	border: none;
+
+	padding-right: 8px;
+
+}
+
+
+
+.adsmanager_table td h2{
+
+	font-size: 11px;
+
+	margin-bottom : 0px;
+
+	padding-bottom: 5px;
+
+}
+
+
+
+.adsmanager_table td {
+
+	text-align: left;
+
+	padding : 5px;
+
+}
+
+
+
+table.adsmanager_table tr td.right {
+
+ text-align: right;
+
+}
+
+
+
+table.adsmanager_table tr td.center {
+
+  text-align:center;
+
+}
+
+
+
+
+
+table.adsmanager_topmenue {
+
+  background-color: #F7F7F7;
+
+  color: #000000;
+
+  padding: 0px;
+
+  margin: 0px;
+
+}
+
+
+
+table.adsmanager_topmenue td {
+
+  border: 1px solid #cccccc;
+
+  color: #000000;
+
+  padding: 3px;
+
+  margin: 0px;
+
+  text-align: center;
+
+  font-size: 11px;
+
+}
+
+
+
+.adsmanager_search_title {
+
+ background: url(../images/system/title.png) no-repeat;
+
+ height: 24px;
+
+ color: #7333B3;
+
+ padding-top: 1px; 
+
+ padding-left: 24px; 
+
+ margin-bottom: 2px;
+
+ margin-top: 2px;
+
+ font-weight: bold;
+
+ font-size: 14px;
+
+ }
+
+ 
+
+.adsmanager_subtitle {
+
+ text-align : right;
+
+ margin-bottom: 2px; 
+
+}
+
+
+
+.adsmanager_search_box {
+
+	position :relative;
+
+	width: 96%;
+
+	left: 2%;
+
+	border: 1px solid #CCCCCC;
+
+	color: #000000;
+
+	padding: 2px;
+
+	margin-top: 20px;
+
+	margin-bottom: 20px;
+
+}
+
+
+
+.adsmanager_box_module {
+
+	width: 95%;
+
+	border: 1px solid #333333;
+
+	color: #000000;
+
+	padding: 2px;
+
+	margin-top: 20px;
+
+	margin-bottom: 20px;
+
+}
+
+
+
+.adsmanager_box {
+
+    position :relative;
+
+	width: 75%;
+
+	left: 10%;
+
+	border: 1px solid #CCCCCC;
+
+	color: #000000;
+
+	padding: 2px;
+
+	margin-top: 20px;
+
+	margin-bottom: 20px;
+
+}
+
+
+
+.adsmanager_inner_box {
+
+	font-size: 12px;
+
+	color: #000000;
+
+	background-color: #EEEEEE;
+
+	padding: 5px; 
+
+	text-align:right;
+
+}
+
+
+
+.adsmanager_inner_box tr td {
+
+	padding-right: 5px;
+
+}
+
+
+
+.adsmanager_search_box form {
+
+	display : inline;
+
+}
+
+
+
+.imgheading {
+
+    margin-right : 5px;
+
+}
+
+
+
+table.adsmanager {
+
+	width: 100%;
+
+	color: #000000;
+
+	border: 1px solid #CCCCCC;
+
+	background-color: #FFFFFF;
+
+}
+
+table.adsmanager_header {
+
+	color: #000000;
+
+	background-color: #FFFFFF;
+
+}
+
+table.adsmanager_select {
+
+	/* width: 100%; */
+
+	color: #000000;
+
+	background-color: #F0F0F0;
+
+}
+
+
+
+div.adsmanager_ads {
+
+  border: 1px solid #CCCCCC;
+
+  color: #000000;
+
+  padding: 2px;
+
+  margin: 0px;
+
+}
+
+
+
+div.adsmanager_top_ads {
+
+	font-size: 10px;
+
+	color: #000000;
+
+	border: 1px dotted #CCCCCC;
+
+	background-color: #CCCCCC;
+
+	padding: 5px; 
+
+}
+
+
+
+div.adsmanager_ads_kindof {
+
+	text-align : right;
+
+}
+
+
+
+div.adsmanager_ads_state {
+
+	text-align : right;
+
+}
+
+
+
+h2.adsmanager_ads_title {
+
+	font-size: 18px;
+
+	font-weight: bold;
+
+	padding: 0px; 
+
+	margin: 0px;
+
+}
+
+
+
+div.adsmanager_ads_main {
+
+	/*background-color: #F0F0F0; MAD*/
+
+}
+
+
+
+div.adsmanager_ads_body {
+
+	float: left;
+
+	width: 67%;
+
+}
+
+
+
+div.adsmanager_ads_desc {
+
+	border: 1px solid #FFFFFF;
+
+	padding: 5px; 
+
+}
+
+
+
+div.adsmanager_ads_price {
+
+	border: 1px solid #FFFFFF;
+
+	padding: 5px; 
+
+}
+
+
+
+div.adsmanager_ads_contact {
+
+	border: 1px solid #FFFFFF;
+
+	padding: 5px; 
+
+}
+
+
+
+div.adsmanager_ads_image {
+
+	border-left: 1px solid #FFFFFF;
+
+	float: left;
+
+	width:30%;
+
+	padding: 5px; 
+
+	text-align : center;
+
+}
+
+
+
+div.adsmanager_ads_image a{
+
+	display : block;
+
+	margin-top: 10px;	
+
+}
+
+
+
+div.adsmanager_ads_image a img{
+
+	border: none;
+
+}
+
+
+
+
+
+.adsmanager_spacer {	
+
+	clear: both;
+
+}
+
+
+
+div.adsmanager_footer {
+
+	width: 100%;
+
+	text-align: center;
+
+	margin: 0 auto 0 auto;
+
+}
+
+
+
+
+
+
+
+fieldset.adsmanager {
+
+	color: #000000;
+
+	border: 1px solid #CCCCCC;
+
+	/* background_color: #555555; */
+
+	/* padding: 5; */
+
+}
+
+
+
+
+
+legend.adsmanager {
+
+	color: #000000;
+
+	font-weight: bold;
+
+	border: 1px solid #CCCCCC;
+
+	/* background_color: #DDDDDD; */
+
+	padding: 10px;
+
+}
+
+
+
+
+
+
+
+.adsmanager {
+
+	border: 1px solid #CCCCCC;
+
+	background-color: #F0F0F0;
+
+	margin: 2px;
+
+	padding: 2px;
+
+}
+
+
+
+.adsmanager_required { 
+
+	border: 1px solid #CCCCCC;
+
+	background-color: #FFEEDD;
+
+	margin: 2px;
+
+	padding: 2px;
+
+} 
+
+
+
+#adsmanager_fieldset label {
+
+	/* border: 1px solid #CCCCCC; */
+
+	width: 15%;
+
+	float: left;
+
+	margin: 2px;
+
+	padding: 2px;
+
+	text-align: right;
+
+}
+
+
+
+#adsmanager_fieldset label.right {
+
+	/* border: 1px solid #CCCCCC; */
+
+	width: 14em;
+
+	float: left;
+
+	margin: 5px;
+
+	padding: 2px;
+
+	text-align: left;
+
+}
+
+
+
+#adsmanager_writead_header{
+
+	margin-bottom: 10px;
+
+	margin-top: 10px;
+
+}
+
+
+
+#adsmanager_innermenu {
+
+text-align:center !important;
+
+margin-left:auto;
+
+margin-right:auto;
+
+}
+
+
+
+#home {
+
+	text-align:center !important;	
+
+}
+
+
+
+#home td,#home tr {
+
+	border: 0;	
+
+}
+
+
+
+#home img {
+
+	padding-right: 10px;	
+
+}
+
+
+
+.pagelinks {
+
+	text-align:center!important;	
+
+	padding:10px;
+
+	margin-left: auto;
+
+    margin-right: auto;
+
+}
+
+
+
+#home table {
+
+	margin-left:auto; margin-right:auto;
+
+}
+
+
+
+.center {
+
+	margin-left:auto; margin-right:auto;	
+
+	text-align:center !important;	
+
+}
+
+
+
+#home div {
+
+	text-align:center !important;	
+
+}
+
+
+
+.adsmanager_fronttext {
+
+	text-align:center !important;
+
+}
+
+
+
+.list-footer, .list-footer div{
+
+	text-align:center !important;
+
+}
+
+
+
+.adsmanager_box_module {
+
+	text-align:center !important;	
+
+}
+
+
+
+.adsmanager_box_module div {
+
+	text-align:center !important;	
+
+}
+
+
+
+
+
+#writead_header1 {
+
+    display: inline;
+
+	border: 1px solid #CCCCCC;
+
+	background-color: #FFEEDD;
+
+	width: 7em;
+
+	margin: 5px;
+
+	padding: 2px;
+
+}
+
+#writead_header2 {
+
+    display: inline;
+
+	border: 1px solid #CCCCCC;
+
+	background-color: #EEEEEE;
+
+	width: 7em;
+
+	margin: 5px;
+
+	padding: 2px;
+
+}
+
+
+
+/* v1.1.1 */
+
+.adsmanager_ver_list {
+
+    list-style: none;
+
+    text-align: left;
+
+    padding-left: 0px;
+
+}
+
+
+
+.adsmanager_ver_list li {
+
+	background-image: none;
+
+}
+
+
+
+.adsmanager_highlight {
+
+background-color:#FF5555;
+
+}
+
+
+
+
+
+/*.trcategory____ {*/
+
+/*background-color:#AA00AA;*/
+
+/*}*/
+
+
+
+/*.trcategory____ td h2 a {*/
+
+/* font-weight: bold;*/
+
+/* font-size: 14px;*/
+
+/* color: #FFFFFF;*/
+
+/* text-decoration:underline;*/
+
+/*}*/
+
+
+
+.paymentmethod {
+
+	list-style: none;
+
+	margin:10px;
+
+}
+
+
+
+.cats {
+
+	min-width:100px;
+
+}
+
+.selected_cats {
+
+	 min-width:100px;	
+
+}
+
+.cats_veXnet {
+
+	
+
+}
+
+.selected_cats_veXnet {
+
+	 min-width:150px;	
+
+}
+
+
+
+.errormsg {
+
+	background: none repeat scroll 0 0 transparent;
+
+    color: #FFFFFF;
+
+    font-weight: bold;
+
+    margin: 0;
+
+    text-indent: 30px;
+
+    border-bottom: 3px solid #84A7DB;
+
+    border-top: 3px solid #84A7DB;
+
+    color: #0055BB;
+
+    list-style: none outside none;
+
+    margin-bottom: 10px;
+
+    padding: 10px;
+
+}
+
+/***************** Version By Ampa ***************/
+#adsmanager_writead_header_v2{
+
+	margin-bottom: 10px;
+
+	margin-top: 10px;
+	
+	
+	/*background:url(../images/background_kataxorisi.gif) top left repeat;*/
+}
+
+#adsmanager_v2_contener_top{
+	height:8px;
+	width:1000px;
+	background:url(../images/background_contenair_top.gif) top left no-repeat;
+}
+
+#adsmanager_v2_contener{
+	/*height:396px;*/
+	height:auto; 
+	width:1000px;
+	background:url(../images/background_contenair_middle.gif) top left repeat-y;
+}
+adsmanager_v2_contener_bottom{
+	height:5px;
+	width:1000px;
+	background:url(../images/background_contenair_bottom.gif) bottom left no-repeat;
+}
+
+#adsmanager_v2_kataxorisi{
+	width:985px;
+	height:auto; /*:337px;*/
+	
+	background:url(../images/background_kataxorisi_middle.gif) top left repeat-y;
+	margin:auto;
+}
+
+#adsmanager_v2_kataxorisi_top{
+	width:985px;
+	height:6px;
+	background:url(../images/background_kataxorisi_top.gif) top left no-repeat;
+	margin:auto;
+}
+
+#adsmanager_v2_kataxorisi_bottom{
+	width:985px;
+	height:6px;
+	background:url(../images/background_kataxorisi_bottom.gif) top left no-repeat;
+	margin:auto;
+}
+
+#adsmanager_v2_kataxorisi .blue{
+	color:#036b9f;
+	
+}
+
+#adsmanager_v2_kataxorisi .texts{
+	padding:20px;
+	
+}
+
+/********** Search Modile ***********/
+#adsmanager_search_v2_map { width:220px; float:left; display:inline-block; }
+#adsmanager_search_v2_map img { width:220px; border:0; }
+#adsmanager_search_v2_text { color:#777777;  font-size:13px; display:inline-block; /*width:40%; float:right;*/ };
+#adsmanager_search_v2_text span { color:#212121; };
+
+.inputbox_searchByeXnet {
+	width:200px;
+	border:0;
+	color:#d1d2d3;
+	font-size:15px;
+	text-align:left;
+}
+.inputbox_searchByeXnet:hover { border:0; }
+
+#adsmanager_search_v2_categories { color:#939495;
+margin-top:2px;
+margin-left:3px;
+/*float:right;*/
+font-size:16px; 
+background:url(../images/adsmanager_search_v2_categories_middle.gif) bottom left repeat-x;
+}
+
+#adsmanager_search_v2_categories_left {
+	margin:0;
+	padding:0;
+	display:inline-block;
+	height:45px;
+	width:5px;
+	background:url(../images/adsmanager_search_v2_categories_left.gif) bottom left no-repeat;
+}
+#adsmanager_search_v2_categories_right {
+	margin:0;
+	padding:0;
+	display:inline-block;
+	height:45px;
+	width:10px;
+	background:url(../images/adsmanager_search_v2_categories_right.gif) bottom left no-repeat;
+}
+#adsmanager_search_v2_categories_middle {
+	margin:0;
+	padding:0;
+	display:inline-block;
+	padding-left:0px;
+	padding-right:5px;
+	
+	height:45px;
+	width:300px;
+	background:url(../images/adsmanager_search_v2_categories_middle.gif) bottom left repeat-x;
+}
+
+#adsmanager_search_v2_categories_top {
+	
+}
+#adsmanager_search_v2_categories_bottom{
+	
+}
+#adsmanager_search_v2_categories_middle_v2{
+	
+}
+
+#adsmanager_search_v2_eidow_akinitou{
+	color:#333;
+margin-top:20px;
+margin-left:0px;
+float:left;
+font-size:14px; 
+}
+
+#adsmanager_search_v2_eidow_akinitou_select{
+	color:#939495;
+margin-top:20px;
+margin-left:115px;
+float:left;
+font-size:16px; 
+background:url(../images/adsmanager_search_v2_categories_middle.gif) bottom left repeat-x;
+}
+
+.bttnSearchText{
+	width:448px;
+	height:49px; /*69px;*/
+	background:url(../images/bttnSearchField_background_small_2.gif) top left no-repeat;
+	padding:10px 10px 0 10px;
+	padding-bottom:0px; 
+	
+}
+
+
+
+table.adsmanager_table_byExnet{ 
+
+ background-color: #fff;
+
+ border: 0;
+
+ border-collapse: collapse; 
+
+ width: 98%;
+
+}
+
+
+
+table.adsmanager_table_byExnet th {
+
+ background-color: #EEEEEE;
+
+ border: 1px solid #cccccc;
+
+ text-align:center;
+
+ font-size: 11px;
+
+}
+
+
+
+table.adsmanager_table_byExnet td {
+
+ border: 0; /*1px solid #cccccc;*/
+
+}
+
+
+
+.adsmanager_table_byExnet td img.adimage {
+
+	float: left;
+
+	border: none;
+
+	padding-right: 8px;
+
+}
+
+.adsmanager_table_byExnet td h1{
+
+	font-size: 14px;
+	
+	color:#970000;
+
+	margin-bottom : 0px;
+
+	padding-bottom: 0px;
+
+}
+
+
+.adsmanager_table_byExnet td h2{
+
+	font-size: 12px;
+
+	margin-bottom : 0px;
+
+	padding-bottom: 0px;
+	
+	color:#A8A8A8;
+	
+	/*color:#EAEAEA;*/
+
+}
+
+
+
+.adsmanager_table_byExnet td {
+
+	text-align: left;
+
+	padding : 5px;
+
+}
+
+/***************** Version By Ampa Search Module ***************/
+#adsmanager_writead_header_v2_searchModule{
+
+	margin-bottom: 10px;
+
+	margin-top: 10px;
+	
+	
+	/*background:url(../images/background_kataxorisi_searchModule.gif) top left repeat;*/
+}
+
+#adsmanager_v2_contener_top_searchModule{
+	height:8px;
+	width:840px;
+	background:url(../images/background_contenair_top_searchModule.gif) top left no-repeat;
+}
+
+#adsmanager_v2_contener_searchModule{
+	/*height:396px;*/
+	height:auto; 
+	width:840px;
+	background:url(../images/background_contenair_middle_searchModule.gif) top left repeat-y;
+}
+adsmanager_v2_contener_bottom_searchModule{
+	height:5px;
+	width:840px;
+	background:url(../images/background_contenair_bottom_searchModule.gif) bottom left no-repeat;
+}
+
+#adsmanager_v2_kataxorisi_searchModule{
+	width:825px;
+	height:auto; /*:337px;*/
+	
+	background:url(../images/background_kataxorisi_middle_searchModule.gif) top left repeat-y;
+	margin:auto;
+}
+
+#adsmanager_v2_kataxorisi_top_searchModule{
+	width:825px;
+	height:6px;
+	background:url(../images/background_kataxorisi_top_searchModule.gif) top left no-repeat;
+	margin:auto;
+}
+
+#adsmanager_v2_kataxorisi_bottom_searchModule{
+	width:825px;
+	height:6px;
+	background:url(../images/background_kataxorisi_bottom_searchModule.gif) top left no-repeat;
+	margin:auto;
+}
+
+#adsmanager_v2_kataxorisi_searchModule .blue{
+	color:#036b9f;
+	
+}
+
+#adsmanager_v2_kataxorisi_searchModule .texts{
+	padding:20px;
+	
+}
+
+/***************** End of Version By Ampa Search Module ***************/
+
+
+
+/***************** MAD changes ***************/
+/* for use with photoshop images */
+/*
+#adsmanager_general_links { color:#939495;
+	display:inline-block;
+	font-size:16px; 
+	background:url(../images/adsmanager_general_links_middle.gif) bottom left repeat-x;
+}
+#adsmanager_general_links_left {
+	display:inline-block;
+	height:45px;
+	width:5px;
+	background:url(../images/adsmanager_general_links_left.gif) bottom left no-repeat;
+}
+#adsmanager_general_links_right {
+	display:inline-block;
+	height:45px;
+	width:10px;
+	background:url(../images/adsmanager_general_links_right.gif) bottom left no-repeat;
+}
+#adsmanager_general_links_middle {
+	display:inline-block;
+	height:45px;
+	width:300px;
+	background:url(../images/adsmanager_general_links_middle.gif) center left repeat-x;
+}
+#adsmanager_general_links_text {
+    display: inline-block;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:12px;
+    line-height: 100%;
+    padding-top: 30px;
+    text-align: center;
+	position:absolute;
+}	
+ */
+/* CSS3 */
+#adsmanager_innermenu a.adsmanager_general_links_button{
+	text-decoration:none;
+	padding:13px 20px;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+	color:#5a5a5a;
+
+	border-radius:7px;
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	
+	background-color: #e7e7e7;
+	background-image: -moz-linear-gradient(#f7f7f7, #e7e7e7);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f7f7f7), to(#e7e7e7));
+	
+	box-shadow:2px 2px 4px #ccc;
+	-moz-box-shadow:2px 2px 4px #ccc;
+	-webkit-box-shadow:2px 2px 4px #ccc;
+	
+}
+#adsmanager_innermenu a.adsmanager_general_links_button:hover{
+	text-decoration:none;
+	
+	background-color: #e1e1e1;
+	background-image: -moz-linear-gradient(#f1f1f1, #e1e1e1);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f1f1f1), to(#e1e1e1));
+	
+	box-shadow:2px 2px 4px #ccc;
+	-moz-box-shadow:2px 2px 4px #ccc;
+	-webkit-box-shadow:2px 2px 4px #ccc;
+}
+
+#home a.adsmanager_category_links_button, a.adsmanager_category_links_button{
+	text-decoration:none;
+	padding:7px 5px;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	text-align:left;
+	color:#5a5a5a;
+	margin-top:10px;
+	float:left;
+	width:92%;
+	
+	border-radius:2px;
+	-moz-border-radius:2px;
+	-webkit-border-radius:2px;
+	
+	background-color: #fff;
+	/*background-image: -moz-linear-gradient(#f5f5f5, #e1e1e1);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f5f5f5), to(#e1e1e1));*/
+	
+	box-shadow:3px 3px 5px #ccc;
+	-moz-box-shadow:3px 3px 5px #ccc;
+	-webkit-box-shadow:3px 3px 5px #ccc;
+	
+}
+#home a.adsmanager_category_links_button:hover{
+	text-decoration:none;
+	
+	background-color: #e1e1e1;
+	/*background-image: -moz-linear-gradient(#f1f1f1, #d5d5d5);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f1f1f1), to(#d5d5d5));*/
+	
+	box-shadow:3px 3px 5px #ccc;
+	-moz-box-shadow:3px 3px 5px #ccc;
+	-webkit-box-shadow:3px 3px 5px #ccc;
+}
+
+#ads_category_items a.adsmanager_details_button, #ads_details_item a.adsmanager_details_button{
+	text-decoration:none;
+	padding:10px 40px;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:20px;
+	/*font-weight:bold;*/
+	text-align:center;
+	color:#fff;
+	
+	border-radius:7px;
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	
+	background-color: #A5090E;
+	background-image: -moz-linear-gradient(#CA161D, #A5090E);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#CA161D), to(#A5090E));
+	
+	box-shadow:4px 4px 4px #ccc;
+	-moz-box-shadow:4px 4px 4px #ccc;
+	-webkit-box-shadow:4px 4px 4px #ccc;
+	
+}
+#ads_category_items a.adsmanager_details_button:hover, #ads_details_item a.adsmanager_details_button:hover{
+	text-decoration:none;
+	
+	background-color: #CA161D;
+	background-image: -moz-linear-gradient(#E92B32, #CA161D);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#E92B32), to(#CA161D));
+	
+	box-shadow:4px 4px 4px #ccc;
+	-moz-box-shadow:4px 4px 4px #ccc;
+	-webkit-box-shadow:4px 4px 4px #ccc;
+}
+
+#home .imgcat_ads {
+	border :0px;
+	padding:0px 5px;
+	margin:-5px;
+	vertical-align:middle;
+}
+
+.catbox {
+	clear:both; 
+	margin-top:15px;
+	padding:5px;
+	border: 1px solid #ddd;
+	box-shadow:3px 3px 3px #ccc;
+	-moz-box-shadow:3px 3px 3px #ccc;
+	-webkit-box-shadow:3px 3px 3px #ccc;
+}
+.imgField img { 
+	width:300px; 
+	box-shadow:3px 3px 3px #ccc;
+	-moz-box-shadow:3px 3px 3px #ccc;
+	-webkit-box-shadow:3px 3px 3px #ccc;
+}
+.ads_price { 
+	color:#fff;
+	font-family: Arial, Helvetica, Sans-Serif;
+	font-size: 16px;
+	font-weight: bold;
+	margin-top:-55px;
+}
+
+div.adsmanager_ads_image_MAD {
+	width:100%;
+	padding:5px; 
+	border:1px solid #ddd;
+	box-shadow:2px 2px 5px #ccc;
+	-moz-box-shadow:2px 2px 5px #ccc;
+	-webkit-box-shadow:2px 2px 5px #ccc;
+}
+div.adsmanager_ads_image_MAD a{
+}
+div.adsmanager_ads_image_MAD a img{
+	/*width:195px; */
+	height:130px; 
+	margin:6px; 
+	box-shadow:4px 4px 6px #ccc;
+	-moz-box-shadow:4px 4px 6px #ccc;
+	-webkit-box-shadow:4px 4px 6px #ccc;
+}
+
+/***************** end of MAD changes ***************/

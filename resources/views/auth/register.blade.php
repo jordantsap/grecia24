@@ -1,5 +1,10 @@
-@extends('layouts.master') @section('breadcrumbs') {{ Breadcrumbs::render('login')
-}} @endsection @section('content')
+@extends('layouts.master')
+
+@section('breadcrumbs')
+  {{ Breadcrumbs::render('register') }}
+@endsection
+
+@section('content')
 <div class="art-layout-wrapper">
   <div class="art-content-layout">
     <div class="art-content-layout-row">

@@ -1,7 +1,7 @@
 span.sobi2Listing_field_more {
     margin-left:0px !important;
   }
-
+/*
 .dynamic-tab-pane-control .tab-row {
     z-index: 1;
     white-space: nowrap;
@@ -10,8 +10,8 @@ span.sobi2Listing_field_more {
     background: url(../images/catalog/tabs_bg.png);
 }
 
-.dynamic-tab-pane-control .tab-row .tab.selected, .dynamic-tab-pane-control .tab-row .tab:hover {
+.dynamic-tab-pane-control .tab-row .tab.active, .dynamic-tab-pane-control .tab-row .tab:hover {
     border-bottom: 0;
     z-index: 3;
-    background: url(../images/catalog//active_tab_bg.png);
-}
+    background: url(../images/catalog//active_tab_bg.png) !important;
+} */

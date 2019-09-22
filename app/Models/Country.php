@@ -11,7 +11,7 @@ class Country extends Model
    *
    * @var array
    */
-  protected $fillable = ['title', 'slug','updated_at', 'created_at'];
+  protected $fillable = ['title', 'phonecode', 'slug','updated_at', 'created_at'];
 
   /**
      * Get the comments for the blog post.

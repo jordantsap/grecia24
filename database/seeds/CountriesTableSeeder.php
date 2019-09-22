@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use App\Models\Country;
+
 class CountriesTableSeeder extends Seeder
 {
     /**
@@ -11,17 +12,7 @@ class CountriesTableSeeder extends Seeder
      */
     public function run()
     {
-      Country::create([
-          'title'           => 'Greece',
-          'slug'          => 'greece',
-      ]);
-      Country::create([
-          'title'           => 'Cyprus',
-          'slug'          => 'cyprus',
-      ]);
-      Country::create([
-          'title'           => 'Bulgaria',
-          'slug'          => 'bulgaria',
-      ]);
+      $sql = database_path('seeds/countries.sql');
+      DB::unprepared(File::get($sql));
     }
 }
