@@ -2,6 +2,10 @@
 
 Route::get('/', 'HomeController@home');
 
+Route::get('get-state-list/{state?}','SearchPropertyController@getStateList')->name('get-state-list');
+Route::get('get-city-list/{city?}','SearchPropertyController@getCityList')->name('get-city-list');
+
+
 Auth::routes();
 // Route::view('register', 'auth.login')->name('register'); //kalipsi apokrisi
 Route::get('/account', 'HomeController@index')->name('account');

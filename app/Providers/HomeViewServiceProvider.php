@@ -16,6 +16,7 @@ class HomeViewServiceProvider extends ServiceProvider
         //
     }
 
+
     /**
      * Bootstrap services.
      *
@@ -24,11 +25,11 @@ class HomeViewServiceProvider extends ServiceProvider
     public function boot()
     {
       // serchform
-      view()->composer('home', function($view) {
-        $view->with('countries', \App\Models\Country::find([85, 123, 255]));
-        $view->with('prefectures', \App\Models\State::all());
-        $view->with('municipalities', \App\Models\City::all());
-        // $view->with('posts', DB::table('posts')->where('active',1)->orderBy('id','desc')->get());
-      });
+      // view()->composer('home', function($view) {
+      //   $view->with('countries', DB::table("countries")->get());
+      //   $view->with('states', \App\Models\State::all());
+      //   $view->with('cities', \App\Models\City::all());
+      //   $view->with('posts', DB::table('posts')->where('active',1)->orderBy('id','desc')->get());
+      // });
     }
 }

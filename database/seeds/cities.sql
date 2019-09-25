@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `cities` (
 
 
 
-INSERT INTO `cities` (`id`, `name`, `slug`, `state_id`) VALUES
+INSERT INTO `cities` (`id`, `name`, `state_id`) VALUES
 (1, 'Bombuflat', 1),
 (2, 'Garacharma', 1),
 (3, 'Port Blair', 1),

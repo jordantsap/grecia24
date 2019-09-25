@@ -36,6 +36,7 @@
   {{-- </div> --}}
   <br>
   @section('extra-js')
+    <script src="{{ asset('js/lightbox.min.js') }}"></script>
     <script>
         lightbox.option({
           'resizeDuration': 500,

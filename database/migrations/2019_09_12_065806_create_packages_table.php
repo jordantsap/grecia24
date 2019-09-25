@@ -15,6 +15,11 @@ class CreatePackagesTable extends Migration
     {
         Schema::create('packages', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('name');
+            $table->string('period')->default('');
+            $table->string('price');
+            $table->unsignedInteger('user_id')->default();
+            $table->integer('credits');
             $table->timestamps();
         });
     }

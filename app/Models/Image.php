@@ -18,9 +18,9 @@ class Image extends Model
     /**
      * Get all of the properties that are assigned this tag.
      */
-    public function properties()
+    public function adverts()
     {
-        return $this->morphedByMany('App\Models\Property', 'imageable');
+        return $this->morphedByMany('App\Models\Advert', 'imageable');
     }
     /**
      * Get all of the properties that are assigned this tag.

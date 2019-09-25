@@ -11,11 +11,11 @@ CREATE TABLE IF NOT EXISTS `states` (
   `name` varchar(30) NOT NULL,
   `country_id` int(11) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4121 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4121 ;
 
 
 
-INSERT INTO `states` (`id`, `name`, `slug`, `country_id`) VALUES
+INSERT INTO `states` (`id`, `name`, `country_id`) VALUES
 (1, 'Andaman and Nicobar Islands', 101),
 (2, 'Andhra Pradesh', 101),
 (3, 'Arunachal Pradesh', 101),
