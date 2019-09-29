@@ -12,17 +12,20 @@ class CreateCategoriesTable extends Migration
      */
     public function up()
     {
+        // Schema::disableForeignKeyConstraints();
         // Create table for storing categories
         Schema::create('categories', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedBigInteger('category_id')->unsigned()->nullable()->default(null);
-            $table->foreign('category_id')->references('id')->on('categories')->onUpdate('cascade')->onDelete('set null');
+            $table->unsignedBigInteger('parent')->nullable();
+            $table->foreign('parent')->references('id')->on('categories');
             $table->integer('ordering')->default(1);
+            $table->integer('published');
             $table->string('name');
             $table->string('description');
-            $table->string('slug')->unique();
+            // $table->string('slug');
             $table->timestamps();
         });
+        // Schema::enableForeignKeyConstraints();
     }
 
     /**

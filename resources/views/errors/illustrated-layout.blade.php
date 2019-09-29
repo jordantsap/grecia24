@@ -475,6 +475,13 @@
                             {{ __('Go Home') }}
                         </button>
                     </a>
+                    <br>
+                    <br>
+                    <a href="javascript:history.back()">
+                        <button class="bg-transparent text-grey-darkest font-bold uppercase tracking-wide py-3 px-6 border-2 border-grey-light hover:border-grey rounded-lg">
+                            {{ __('Or Go Back') }}
+                        </button>
+                    </a>
                 </div>
             </div>
 

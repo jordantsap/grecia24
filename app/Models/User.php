@@ -44,4 +44,15 @@ class User extends \TCG\Voyager\Models\User
     {
         return $this->hasOne('App\Models\Profile');
     }
+
+    // public function getSearchResult(): SearchResult
+    // {
+    //     $url = route('users.show', $this->id);
+    //
+    //     return new SearchResult(
+    //         $this,
+    //         $this->name,
+    //         $url
+    //     );
+    // }
 }

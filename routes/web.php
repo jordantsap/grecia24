@@ -2,16 +2,18 @@
 
 Route::get('/', 'HomeController@home');
 
-Route::get('get-state-list/{state?}','SearchPropertyController@getStateList')->name('get-state-list');
-Route::get('get-city-list/{city?}','SearchPropertyController@getCityList')->name('get-city-list');
+// HOME SEARCH
+Route::get('get-state-list/{state?}','AdvertSearchController@getStateList')->name('get-state-list');
+Route::get('get-city-list/{city?}','AdvertSearchController@getCityList')->name('get-city-list');
+Route::get('adsearch','AdvertSearchController@adsearch')->name('adsearch');
 
 
 Auth::routes();
 // Route::view('register', 'auth.login')->name('register'); //kalipsi apokrisi
 Route::get('/account', 'HomeController@index')->name('account');
 
-Route::view('/contact', 'contact');
-Route::post('/contact', 'ContactController@postContact')->name('postContact');
+Route::get('/contact', 'ContactController@create')->name('ContactPage');
+Route::post('/contact', 'ContactController@store')->name('postContact');
 
 Route::get('destinations', 'DestinationController@index')->name('destinations.index');
 Route::get('destinations/{destination}', 'DestinationController@show')->name('destinations.show');

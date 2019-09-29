@@ -10,6 +10,7 @@ cookies.txt
 hts-log.txt
 .env
 .env.backup
+local.env
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml

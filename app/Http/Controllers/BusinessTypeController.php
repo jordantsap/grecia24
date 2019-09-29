@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\BusinessType;
 use App\Models\Business;
 use Illuminate\Http\Request;
-
+use DB;
 class BusinessTypeController extends Controller
 {
     /**
@@ -15,7 +15,7 @@ class BusinessTypeController extends Controller
      */
     public function index()
     {
-        $types = BusinessType::all();
+        $types = DB::table('business_types')->get();
         // dd($types);
         return view('catalog.index', compact('types'));
     }

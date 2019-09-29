@@ -16,16 +16,17 @@ class CreateAdvertsTable extends Migration
         Schema::create('adverts', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('title');
-            $table->unsignedInteger('propertycategory');
-            $table->unsignedInteger('prefecture_id');
-            $table->unsignedInteger('municipality_id');
+            $table->unsignedInteger('category');
+            $table->unsignedInteger('country_id');
+            $table->unsignedInteger('state_id');
+            $table->unsignedInteger('city_id');
             $table->string('tk');
             $table->string('agent');
             $table->integer('tel');
             $table->string('email');
             $table->string('agentcode');
-            $table->unsignedInteger('property_kind_id');
-            $table->unsignedInteger('property_type_id');
+            $table->unsignedInteger('advert_kind_id');
+            $table->unsignedInteger('advert_type_id');
             $table->integer('bedrooms');
             $table->integer('bathrooms');
             $table->integer('wc');
@@ -62,7 +63,6 @@ class CreateAdvertsTable extends Migration
             $table->unsignedInteger('pool');
             $table->boolean('roofgarden');
             $table->text('description');
-            $table->unsignedInteger('country_id')->default('1');
             $table->timestamps();
         });
     }

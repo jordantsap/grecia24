@@ -7,11 +7,11 @@ use Illuminate\Http\Request;
 class ContactController extends Controller
 {
   ////////////////////////////
-      public function ContactPage()
+      public function create()
       {
           return view('contact');
       }
-      public function postContact(Request $request)
+      public function store(Request $request)
       {
         $this->validate($request, [
           'name' => 'required',

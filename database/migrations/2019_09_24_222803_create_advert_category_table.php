@@ -15,6 +15,8 @@ class CreateAdvertCategoryTable extends Migration
     {
         Schema::create('advert_category', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('title');
+            $table->string('slug');
             $table->unsignedBigInteger('advert_id')->nullable()->default(null);
             $table->foreign('advert_id')->references('id')->on('adverts')->onUpdate('cascade')->onDelete('set null');
             $table->unsignedBigInteger('category_id')->nullable()->default(null);

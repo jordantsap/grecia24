@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePropertyBedroomsTable extends Migration
+class CreateAdvertTypesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,11 @@ class CreatePropertyBedroomsTable extends Migration
      */
     public function up()
     {
-        Schema::create('property_bedrooms', function (Blueprint $table) {
-          $table->bigIncrements('id');
-          $table->string('title');
-          $table->string('slug');
+        Schema::create('advert_types', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('title');
+            $table->string('slug');
+            $table->timestamps();
         });
     }
 
@@ -27,6 +28,6 @@ class CreatePropertyBedroomsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('property_bedrooms');
+        Schema::dropIfExists('advert_types');
     }
 }

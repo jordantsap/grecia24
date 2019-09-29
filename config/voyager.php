@@ -114,7 +114,7 @@ return [
          * Select languages that are supported.
          */
         'locales' => [
-            'el',
+            'en',
             //'pt',
         ],
     ],

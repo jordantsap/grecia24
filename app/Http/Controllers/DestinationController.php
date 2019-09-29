@@ -4,12 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Destination;
+use DB;
 
 class DestinationController extends Controller
 {
   public function index()
   {
-    $destinations = Destination::all();
+    $destinations = DB::table('destinations')->get();
       return view('destinations.index', compact('destinations'));
   }
   public function show(Destination $destination)

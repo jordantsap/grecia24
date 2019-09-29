@@ -16,14 +16,14 @@ class Image extends Model
     }
 
     /**
-     * Get all of the properties that are assigned this tag.
+     * Get all of the adverts that are assigned this tag.
      */
     public function adverts()
     {
         return $this->morphedByMany('App\Models\Advert', 'imageable');
     }
     /**
-     * Get all of the properties that are assigned this tag.
+     * Get all of the destinations that are assigned this tag.
      */
     public function destinations()
     {

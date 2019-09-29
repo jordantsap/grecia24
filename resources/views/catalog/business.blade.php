@@ -357,47 +357,12 @@ us, more info,')
 	</div>
 </section>
 @section('extra-js')
-{{-- <script type="text/javascript">
-	//Business tabs
-	$(document).ready(function() {
-
-		$('.dynamic-tab-pane-control .tab-row a').click(function() {
-
-			if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-
-				&&
-				location.hostname == this.hostname) {
-
-				var $target = $(this.hash);
-
-				$target = $target.length && $target
-
-					||
-					$('[name=' + this.hash.slice(1) + ']');
-
-				if ($target.length) {
-
-					var targetOffset = $target.offset().top - 1000;
-
-					$('html,body')
-
-						.animate({
-							scrollTop: targetOffset
-						}, 20000);
-					.animate({
-						scrollBottom: targetOffset
-					}, 20000);
-
-					return false;
-
-				}
-
-			}
-
-		});
-
-	}); --}}
-</script>
-
+	<script src="{{ asset('js/lightbox.min.js') }}"></script>
+	<script>
+			lightbox.option({
+				'resizeDuration': 500,
+				'fadeDuration' : 500
+			})
+	</script>
 @endsection
 @endsection

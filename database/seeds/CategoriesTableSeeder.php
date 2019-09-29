@@ -17,6 +17,242 @@ class CategoriesTableSeeder extends Seeder
      */
     public function run()
     {
+      Schema::disableForeignKeyConstraints();
+
+      DB::table('categories')->insert( [
+'id'=>1,
+'parent'=>23,
+'name'=>'Διαμερίσματα',
+'description'=>'',
+'ordering'=>1,
+'published'=>1
+] );
+
+
+
+DB::table('categories')->insert( [
+'id'=>2,
+'parent'=>23,
+'name'=>'Αγροτεμάχια',
+'description'=>'',
+'ordering'=>13,
+'published'=>1
+] );
+
+
+
+DB::table('categories')->insert( [
+'id'=>3,
+'parent'=>23,
+'name'=>'Επαγγελματικοί Χώροι',
+'description'=>'',
+'ordering'=>9,
+'published'=>1
+] );
+
+
+
+DB::table('categories')->insert( [
+'id'=>5,
+'parent'=>23,
+'name'=>'Ξενοδοχεία',
+'description'=>'',
+'ordering'=>7,
+'published'=>1
+] );
+
+
+
+DB::table('categories')->insert( [
+'id'=>7,
+'parent'=>22,
+'name'=>'Διαμερίσματα',
+'description'=>'',
+'ordering'=>4,
+'published'=>1
+] );
+
+
+
+DB::table('categories')->insert( [
+'id'=>8,
+'parent'=>23,
+'name'=>'Επιχειρήσεις',
+'description'=>'',
+'ordering'=>8,
+'published'=>1
+] );
+
+
+
+DB::table('categories')->insert( [
+'id'=>9,
+'parent'=>23,
+'name'=>'Μονοκατοικίες',
+'description'=>'
+
+
+
+\r\n
+
+
+',
+'ordering'=>2,
+'published'=>1
+] );
+
+
+DB::table('categories')->insert( [
+'id'=>10,
+'parent'=>23,
+'name'=>'Εξοχικές Κατοικίες',
+'description'=>'
+
+\"home
+
+',
+'ordering'=>3,
+'published'=>1
+] );
+
+
+DB::table('categories')->insert( [
+'id'=>11,
+'parent'=>23,
+'name'=>'Οικόπεδα',
+'description'=>'
+
+\"home
+
+',
+'ordering'=>14,
+'published'=>1
+] );
+
+
+DB::table('categories')->insert( [
+'id'=>12,
+'parent'=>23,
+'name'=>'Νησιά',
+'description'=>'',
+'ordering'=>15,
+'published'=>1
+] );
+
+
+
+DB::table('categories')->insert( [
+'id'=>13,
+'parent'=>22,
+'name'=>'Μονοκατοικίες',
+'description'=>'',
+'ordering'=>5,
+'published'=>1
+] );
+
+
+
+DB::table('categories')->insert( [
+'id'=>14,
+'parent'=>22,
+'name'=>'Εξοχικές Κατοικίες',
+'description'=>'',
+'ordering'=>6,
+'published'=>1
+] );
+
+
+
+DB::table('categories')->insert( [
+'id'=>15,
+'parent'=>22,
+'name'=>'Ξενοδοχεία',
+'description'=>'',
+'ordering'=>10,
+'published'=>1
+] );
+
+
+
+DB::table('categories')->insert( [
+'id'=>16,
+'parent'=>22,
+'name'=>'Επιχειρήσεις',
+'description'=>'',
+'ordering'=>11,
+'published'=>1
+] );
+
+
+
+DB::table('categories')->insert( [
+'id'=>17,
+'parent'=>22,
+'name'=>'Επαγγελματικοί Χώροι',
+'description'=>'',
+'ordering'=>12,
+'published'=>1
+] );
+
+
+
+DB::table('categories')->insert( [
+'id'=>18,
+'parent'=>22,
+'name'=>' Αγροτεμάχια',
+'description'=>'',
+'ordering'=>16,
+'published'=>1
+] );
+
+
+
+DB::table('categories')->insert( [
+'id'=>19,
+'parent'=>22,
+'name'=>'Οικόπεδα',
+'description'=>'',
+'ordering'=>17,
+'published'=>1
+] );
+
+
+
+DB::table('categories')->insert( [
+'id'=>20,
+'parent'=>22,
+'name'=>'Νησιά',
+'description'=>'',
+'ordering'=>18,
+'published'=>1
+] );
+
+
+
+DB::table('categories')->insert( [
+'id'=>22,
+'parent'=>0,
+'name'=>'Ενοικιάσεις Ακινήτων',
+'description'=>'',
+'ordering'=>0,
+'published'=>1
+] );
+
+
+
+DB::table('categories')->insert( [
+'id'=>23,
+'parent'=>0,
+'name'=>'Πωλήσεις Ακινήτων',
+'description'=>'',
+'ordering'=>0,
+'published'=>1
+] );
+
+//Joomla seeder end
+//
+//
+
         //Data Type
         $dataType = $this->dataType('name', 'categories');
         if (!$dataType->exists) {
@@ -179,23 +415,23 @@ class CategoriesTableSeeder extends Seeder
         Permission::generateFor('categories');
 
         //Content
-        $category = Category::firstOrNew([
-            'slug' => 'category-1',
-        ]);
-        if (!$category->exists) {
-            $category->fill([
-                'name' => 'Category 1',
-            ])->save();
-        }
-
-        $category = Category::firstOrNew([
-            'slug' => 'category-2',
-        ]);
-        if (!$category->exists) {
-            $category->fill([
-                'name' => 'Category 2',
-            ])->save();
-        }
+        // $category = Category::firstOrNew([
+        //     'slug' => 'category-1',
+        // ]);
+        // if (!$category->exists) {
+        //     $category->fill([
+        //         'name' => 'Category 1',
+        //     ])->save();
+        // }
+        //
+        // $category = Category::firstOrNew([
+        //     'slug' => 'category-2',
+        // ]);
+        // if (!$category->exists) {
+        //     $category->fill([
+        //         'name' => 'Category 2',
+        //     ])->save();
+        // }
     }
 
     /**
